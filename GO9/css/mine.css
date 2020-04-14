@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+h1,h2,h3,h4,h5,h6,p,a,li{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: lighter;
+}
+h1 {font-size:3rem;}
+h2 {font-size: 2.5rem;}
+h3 {font-size: 2rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1rem;}
+a{
+    text-decoration: none;
+    display: block;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.moblie{display: none;}
+.row.moblie{display: none;}
+.unmoblie{display: block;}
+.row.unmoblie{display: flex;}
+.p-relative{position: relative;}
+.p-absolute{position: absolute;}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row.column{
+    flex-direction: column;
+}
+.row.between{
+    justify-content: space-between;
+}
+.row.start{
+    justify-content: flex-start;
+}
+.row.evenly{
+    justify-content: space-evenly;
+    }
+.row.items-start{
+    align-items: flex-start;
+}
+.row.items-end{
+    align-items: flex-end;
+}
+.row.stretch{
+    align-items: stretch;
+}
+.bg_image_full{
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-bule{
+    background: #D7F4F4;
+}
+.bg-gray{
+    background:#F2F2F2 ;
+}
+.bg-ff{
+    background:#ffb71b96 ;
+}
+.bg-white{background: white;}
+.text.center{text-align: center;}
+.text.white{color: white;}
+.text-right{text-align: right;}
+/* ================ logo =============================================================================================== */
+.navbar {
+    position: fixed; ;
+    transition: .5s;
+}
+.navbar .logo{
+    padding: 0 1rem;
+ }
+.logo h4{
+    color: #00BED6;
+    margin: 0;
+    white-space: nowrap;
+}
+.logo h5{
+    color:#ffb819;
+    margin: 0;
+}
+/* ================ nav =============================================================================================== */
+.navbar{
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    padding: 0 2rem;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar_nav{
+    margin: 0;
+}
+.navbar_nav .nav-item{
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+.navbar_nav a{
+    color: #00BED6;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 1rem;
+}
+.navbar_nav p{
+    font-size: .8rem;
+    line-height: .8rem;
+    margin: 0 ;
+
+}
+.navbar_nav .nav-item:hover{
+    background:#D7F4F4 ;
+}
+.navbar_nav .nav-item:hover a{
+    color: #009cad;
+}
+/* ================== bar =========================== */
+
+.bar{
+    width: 100%;
+    height: 194px;
+    bottom: 0;
+    left: 0;
+}
+.bar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    bottom: 0;
+    left: 0;
+}
+/* ================== index ====================================================================================== */
+.index-head .bg_image_full{
+    background: url(../img/home/bg1.png);
+    filter: brightness(1);
+    height: 900px;
+}
+
+.index-head .bg_image_full .p-absolute{
+    width: 100%;
+    bottom: 0;
+    left:0 ;
+}
+.index-head .bg_image_full .p-absolute::after{
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    width: 100%;
+    background: #fff;
+    height: 3px;
+}
+.index-head .bg_image_full img{
+    width: 70%;
+}
+
+.index-head .bg_image_full .bg-line{
+    background: linear-gradient(90deg, #FFB71B, #00BED6 );
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    opacity: .7;
+}
+
+
+.box::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    height: 100%;
+}
+.box:first-child::after{
+    left:2px;
+}
+.box:last-child::after{
+    right: 2px;
+}
+.index-head .box{
+    position: relative;
+    flex: 2 1 0;
+}
+
+.index-head .figure{
+    position: relative;
+    padding: 5rem 0;
+}
+
+.index-head .figure img{
+    width: 70%;
+}
+.index-head .figure h4{
+    color: #00BED6;
+    margin: 0;
+}
+/* =============== secend ==================== */
+
+.index-secend.bg_image_full{
+    background: url(../img/home/cutting.png);
+    height: 800px;
+}
+.index-secend .p-relative{
+    padding: 5rem  0;
+}
+.index-secend .row.items-start.start{
+    padding: 0 5rem;
+}
+.index-secend .june24 {
+    width:25%;
+}
+.index-secend .june24 img{
+    width: 100%;
+   padding:3rem;
+}
+.book-img div{
+    width: 300px;
+ height: 20rem;
+}
+.book-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex: 0 0 0;
+   }
+/* =============== third ==================== */
+.index-third.bg_image_full{
+    background: url(../img/twoman.png);
+    padding: 3rem 0;
+    background-size: cover;
+    height: 800px;
+}
+.index-third a{
+    background: rgba(255, 255, 255, 0.849);
+    color: #00BED6;
+    font-size:2rem ;
+    width: 300px;
+    height: 66px;
+    border-radius: 33px;
+    margin-top: 15rem;
+}
+.index-third a:hover{
+    background: rgba(255, 255, 255,1);
+}
+/* =============== fourth ==================== */
+.index-fourth {
+    padding: 2rem 0 5rem 0;
+}
+.index-fourth .even{
+    padding: 2rem;
+}
+.index-fourth .even>img{
+    width: 40%;
+}
+.index-fourth .text h4 img{
+    height: 3rem;
+    margin-right: 4rem;
+}
+/* =============== course ==================== */
+.index-course .text div{
+    padding: 1rem;
+    width: 40%;
+}
+.index-course .text div h4{
+    margin: 0;
+}
+.index-course .text div img{
+    width: 100%;
+}
+.index-course.p-relative{
+    height: 1000px;
+}
+.index-course .p-absolute{
+    background: url(../img/home/diamond.png);
+    background-size: cover;
+    height:calc(100% - 10rem);
+    width: 100%;
+    top: 10rem;
+    left: 0;
+    z-index: -1;
+}
+/* =============== rhino ==================== */
+.index-course.bg_image_full{
+    background: url(../img/about/bg3.png);
+    z-index: -2;
+}
+.index-course .p-absolute.rhino-bg-line{
+    background: linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) );
+    mix-blend-mode: screen;
+    width: 100%;
+    height:calc(100% - 20rem);
+    opacity: .7;
+    z-index: -1;
+    top: auto;
+    bottom: 0;
+    left: 0;
+}
+.index-course .rhino-text{
+    margin-top: 5rem;
+    padding: 2rem 10rem 2rem 8rem;
+    background: rgba(29, 29, 29, 0.8);
+    color: white;
+}
+/* ================ #about ======================================================================================== */
+#about .overlay{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+}
+.about .icon{
+    height: 400px;
+    width: 400px;
+    padding: 4rem;
+}
+.about .icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.about .text{
+    width:60%;
+    flex: 1 1 0;
+    padding: 5rem;
+}
+.about>img.p-absolute{
+    bottom: -50px;
+    width: 22px;
+    z-index: 1;
+}
+.about .bg-bule{
+    background: rgba(215, 244, 244, 0.9);
+    height:100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.about .bg-w{
+    background: rgba(255, 255, 255, 0.9);
+    height:100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.y-padding{padding: 5rem 0;}
+/* ======== header ========== */
+.about_header{
+    background:url(../img/about/bg1.png) ;
+}
+.about_header h1{
+    color: #fff;
+}
+/* ======== design ========== */
+.about.design .overlay{
+    background: url(../img/about/bg2.png);
+}
+.about.design img.path.p-absolute{
+    top: -120px;
+    left: calc(50% - 20px);
+    width: 100px;
+    z-index: 1;
+}
+/* ========= you ============ */
+.about.you .overlay{
+    background: url(../img/about/bg3.png);
+}
+.text.right h2{
+    text-align: right;
+    /* moblie 至左 */
+}
+/* ========= us ============ */
+.about.us .overlay{
+    background: url(../img/about/bg4.png);
+}
+/* ========= map ============ */
+.about.map{
+    padding: 5rem;
+}
+.about.map>img{
+    width: 45%;
+    margin-top: 5rem;
+}
+.about .text h4{
+    margin: 0;
+    color: #05A3AF;
+}
+.about .text h4 img{
+    margin-right: 1rem;
+}
+.about .text p{
+    padding: 0 3rem;
+}
+/* ================ #course ======================================================================================== */
+/* ============ top-head ================== */
+.course-head{
+    background: url(../img/course/bg1.png);
+    z-index: -2;
+}
+.course-head .bg-line{
+    background: linear-gradient(#00BED600,#00BED6ff,#00BED600);
+    width: 100%;
+    height: 618px;
+    bottom: 0;
+    left: 0;
+z-index: -1;
+opacity: .5;
+}
+.course-head .text h1{
+    line-height: 18rem;
+}
+.course-head .text h4{
+    margin: 0;
+}
+/* ============ secend ================== */
+.course-secend .row .icon{
+    padding: 3rem;
+    flex: 1 1 0;
+}
+.course-secend h2{    line-height: 70px;
+}
+.course-secend img{
+    width: 100%;
+}
+/* ================ third ==================== */
+.course-third {padding:.1rem;}
+.course-third img{
+    width: 100%;
+    margin:5rem 0 10rem;
+}
+/* ============== fourth ================ */
+.course-fourth{
+    background: url(../img/course/bg2.png);
+    z-index: -2;
+}
+.course-fourth .bg-line{
+    background: linear-gradient( 119deg, #FFB71B,#00BED6);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+z-index: -1;
+opacity: .5;
+}
+.course-fourth .container{
+    padding: 10rem 0;
+}
+.course-fourth .text{
+    width: 486px;
+}
+.course-fourth .text h1{
+    margin: 0;
+}
+.course-fourth .text h4{
+    margin: 0;
+}
+.course-fourth .text h5{
+    margin-top: 5rem;
+}
+/* ============= fifth =============== */
+.course-fifth .container{
+    padding: 3rem;
+}
+.course-fifth .text div>img{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex: 1 1 0;
+}
+.course-fifth .icon{
+    padding-left:40px;
+}
+.course-fifth h3{
+    text-align: center;
+}
+.course-fifth h5{
+    display: flex;
+    align-items: center;
+}
+.course-fifth img{
+    padding-right:1rem;
+    margin-right: 3rem;
+    width: 93px;
+}
+/* ================ #learn ======================================================================================== */
+/* ============ top-head ================== */
+.learn-head{
+    height: 1100px;
+    padding-top:30rem ;
+}
+.learn-head .bg-image-full{
+    background: url(../img/twoman.png)no-repeat center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.learn-head .bg-line{
+    background: linear-gradient( #00000000 0%, #000000 61%, #000000 100%);
+    height: 680px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* ============ secend ================== */
+.learn-secend{
+    padding:  5rem 0;
+}
+.learn-secend h3{
+    margin: 0;
+}
+.learn-secend h5{
+    margin: .5rem;
+}
+.learn-secend .image-board{
+    width: 50%;
+    overflow: hidden;
+}
+
+.learn-secend .image-secend {
+    flex-direction: column;
+    margin-right: 1rem;
+    flex: 1 1 0;
+}
+.learn-secend .image-secend img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex: 1 1 0;
+}
+.learn-secend .image-board>img{
+    width:  50%;
+    padding-right: 1rem;
+
+}
+.learn-secend .text{
+    flex: 1 1 0;
+}
+/* ================ footer ========================================================================================= */
+footer{
+    color: #595959;
+}
+.footer-logo{
+    width: 30%;
+}
+.logo-icon a{
+    padding: 1rem .5rem;
+    flex: 1 1 0;
+}
+.logo-icon a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* =============== TEL ====================== */
+.footer-tel .row>div{
+    margin: .5rem 1rem;
+}
+.footer-tel>h4{
+    color: #00BED6;
+}
+.footer-tel img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.footer-tel h4{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.footer-tel a{
+    color: #595959;
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    margin: 0;
+}
+.footer-tel a:hover{
+    color: #00BED6;
+}
+/* ============== list-inline ================= */
+.list-inline{padding: 0;}
+.list-inline li{
+    flex: 1 0 0;
+    border-right: 1px solid #595959;
+}
+.list-inline li:first-child{
+    border-left: 1px solid #595959;
+}
+.list-inline a{
+    color: #00BED6;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 1rem;
+}
+
+.list-inline a:hover{
+    color: #595959;
+}
+/* ================= footer-lest ================== */
+.footer-lest a{
+    flex: 1 0 0;
+    text-align: center;
+    color: #595959;
+}
+.footer-lest a:hover{
+    color: #00BED6;
+}
+/* ============================================= path ================================================================================ */
+.cls-1 {
+    fill: #00bed6;
+  }
+
+  .cls-2 {
+    fill: #ffb71b;
+  }
+ 

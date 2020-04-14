@@ -1,0 +1,25 @@
+<svg id="コンポーネント_13_1" data-name="コンポーネント 13 – 1" xmlns="http://www.w3.org/2000/svg" width="158.323" height="114.671" viewBox="0 0 158.323 114.671">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffb71b;
+      }
+
+      .cls-2 {
+        font-size: 36px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: SegoeUI, Segoe UI;
+        letter-spacing: 0.05em;
+      }
+
+      .cls-3 {
+        font-size: 33.542px;
+      }
+    </style>
+  </defs>
+  <path id="パス_255" data-name="パス 255" class="cls-1" d="M527.335,5335.944H418.454c-13.631,0-24.721,13.47-24.721,30.027v54.617c0,16.557,11.09,30.027,24.721,30.027H527.335c13.631,0,24.721-13.47,24.721-30.027v-54.617C552.056,5349.414,540.966,5335.944,527.335,5335.944Zm22.42,84.644c0,15.015-10.058,27.232-22.42,27.232H418.454c-12.362,0-22.42-12.217-22.42-27.232V5385.06H549.755Z" transform="translate(-393.733 -5335.944)"/>
+  <text id="_28" data-name="28" class="cls-2" transform="translate(56.158 93.988)"><tspan x="0" y="0">28</tspan></text>
+  <text id="JULY" class="cls-3" transform="translate(35.893 38.441)"><tspan x="0" y="0">JULY</tspan></text>
+</svg>

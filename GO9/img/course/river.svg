@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1813.706" height="335.636" viewBox="0 0 1813.706 335.636">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ffb71b;
+      }
+
+      .cls-10, .cls-12, .cls-15, .cls-17, .cls-2, .cls-4, .cls-6, .cls-8 {
+        font-size: 46px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+
+      .cls-10, .cls-13, .cls-15, .cls-17, .cls-2, .cls-4, .cls-6, .cls-8 {
+        font-family: YuGothicUI-Bold, Yu Gothic UI;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #ffcd65;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #4fb7a3;
+      }
+
+      .cls-7, .cls-8 {
+        fill: #b8d39b;
+      }
+
+      .cls-10, .cls-9 {
+        fill: #05a3af;
+      }
+
+      .cls-11, .cls-12 {
+        fill: #00b4cb;
+      }
+
+      .cls-12 {
+        font-family: NotoSans-Bold, Noto Sans;
+      }
+
+      .cls-14, .cls-15 {
+        fill: #0b6768;
+      }
+
+      .cls-16, .cls-17 {
+        fill: #38878d;
+      }
+
+      .cls-18 {
+        filter: url(#パス_597-4);
+      }
+
+      .cls-19 {
+        filter: url(#パス_596-4);
+      }
+
+      .cls-20 {
+        filter: url(#パス_597-3);
+      }
+
+      .cls-21 {
+        filter: url(#パス_596-3);
+      }
+
+      .cls-22 {
+        filter: url(#パス_597-2);
+      }
+
+      .cls-23 {
+        filter: url(#パス_596-2);
+      }
+
+      .cls-24 {
+        filter: url(#パス_597);
+      }
+
+      .cls-25 {
+        filter: url(#パス_596);
+      }
+    </style>
+    <filter id="パス_596" x="1301" y="0" width="397.705" height="154.082" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_597" x="1416" y="181.555" width="397.705" height="154.082" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_596-2" x="867" y="0" width="397.705" height="154.082" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_597-2" x="988" y="181.555" width="397.705" height="154.082" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_596-3" x="434" y="0" width="397.705" height="154.082" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_597-3" x="559" y="181.555" width="397.705" height="154.082" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_596-4" x="0" y="0" width="397.705" height="154.082" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-7"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_597-4" x="131" y="181.555" width="397.705" height="154.082" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-8"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_468" data-name="グループ 468" transform="translate(222.717 -479.649)">
+    <g id="グループ_476" data-name="グループ 476" transform="translate(1087.283 485.649)">
+      <g class="cls-25" transform="matrix(1, 0, 0, 1, -1310, -6)">
+        <path id="パス_596-5" data-name="パス 596" class="cls-1" d="M573.936,675.031v.027H850.656l63.359,59.371L857.6,787.294h43.338l52.7-52.865-82.964-83.217H597.755Z" transform="translate(736.06 -645.21)"/>
+      </g>
+      <text id="修改" class="cls-2" transform="translate(153.536 100.189)"><tspan x="-47.15" y="0">修改</tspan></text>
+    </g>
+    <g id="グループ_475" data-name="グループ 475" transform="translate(1202.283 667.204)">
+      <g class="cls-24" transform="matrix(1, 0, 0, 1, -1425, -187.55)">
+        <path id="パス_597-5" data-name="パス 597" class="cls-3" d="M772.257,582.532H728.919L785.333,635.4l-63.359,59.371H445.255v.027l23.819,23.819H742L824.961,635.4Z" transform="translate(979.74 -394.98)"/>
+      </g>
+      <text id="交件" class="cls-4" transform="translate(153.678 72.464)"><tspan x="-47.15" y="0">交件</tspan></text>
+    </g>
+    <g id="グループ_474" data-name="グループ 474" transform="translate(653.283 485.649)">
+      <g class="cls-23" transform="matrix(1, 0, 0, 1, -876, -6)">
+        <path id="パス_596-6" data-name="パス 596" class="cls-5" d="M573.936,675.031v.027H850.656l63.359,59.371L857.6,787.294h43.338l52.7-52.865-82.964-83.217H597.755Z" transform="translate(302.06 -645.21)"/>
+      </g>
+      <text id="開發" class="cls-6" transform="translate(153.536 100.019)"><tspan x="-47.15" y="0">開發</tspan></text>
+    </g>
+    <g id="グループ_473" data-name="グループ 473" transform="translate(774.283 667.204)">
+      <g class="cls-22" transform="matrix(1, 0, 0, 1, -997, -187.55)">
+        <path id="パス_597-6" data-name="パス 597" class="cls-7" d="M772.257,582.532H728.919L785.333,635.4l-63.359,59.371H445.255v.027l23.819,23.819H742L824.961,635.4Z" transform="translate(551.74 -394.98)"/>
+      </g>
+      <text id="測試" class="cls-8" transform="translate(153.433 72.464)"><tspan x="-47.15" y="0">測試</tspan></text>
+    </g>
+    <g id="グループ_485" data-name="グループ 485">
+      <g class="cls-21" transform="matrix(1, 0, 0, 1, -222.72, 479.65)">
+        <path id="パス_596-7" data-name="パス 596" class="cls-9" d="M573.936,675.031v.027H850.656l63.359,59.371L857.6,787.294h43.338l52.7-52.865-82.964-83.217H597.755Z" transform="translate(-130.94 -645.21)"/>
+      </g>
+      <text id="設計" class="cls-10" transform="translate(316.102 585.668)"><tspan x="0" y="0">設計</tspan></text>
+    </g>
+    <g id="グループ_484" data-name="グループ 484">
+      <g class="cls-20" transform="matrix(1, 0, 0, 1, -222.72, 479.65)">
+        <path id="パス_597-7" data-name="パス 597" class="cls-11" d="M772.257,582.532H728.919L785.333,635.4l-63.359,59.371H445.255v.027l23.819,23.819H742L824.961,635.4Z" transform="translate(122.74 -394.98)"/>
+      </g>
+      <text id="Feedback_設計修改" data-name="Feedback 
+&amp; 設計修改" class="cls-12" transform="translate(498.471 710.668)"><tspan x="-124.065" y="0">Feedback </tspan><tspan x="-120.975" y="56">&amp; </tspan><tspan class="cls-13" y="56">設計修改</tspan></text>
+    </g>
+    <g id="グループ_483" data-name="グループ 483">
+      <g class="cls-19" transform="matrix(1, 0, 0, 1, -222.72, 479.65)">
+        <path id="パス_596-8" data-name="パス 596" class="cls-14" d="M573.936,675.031v.027H850.656l63.359,59.371L857.6,787.294h43.338l52.7-52.865-82.964-83.217H597.755Z" transform="translate(-564.94 -645.21)"/>
+      </g>
+      <text id="企劃" class="cls-15" transform="translate(-92.176 585.668)"><tspan x="0" y="0">企劃</tspan></text>
+    </g>
+    <g id="グループ_482" data-name="グループ 482">
+      <g class="cls-18" transform="matrix(1, 0, 0, 1, -222.72, 479.65)">
+        <path id="パス_597-8" data-name="パス 597" class="cls-16" d="M772.257,582.532H728.919L785.333,635.4l-63.359,59.371H445.255v.027l23.819,23.819H742L824.961,635.4Z" transform="translate(-305.26 -394.98)"/>
+      </g>
+      <text id="專案會議" class="cls-17" transform="translate(71.227 739.668)"><tspan x="-95.45" y="0">專案會議</tspan></text>
+    </g>
+  </g>
+</svg>

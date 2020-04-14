@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="435.633" height="435.633" viewBox="0 0 435.633 435.633">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffb71b;
+      }
+
+      .cls-2 {
+        fill: #00bed6;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #00bed6;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <g id="グループ_328" data-name="グループ 328" transform="translate(-1294.1 -1380.639)">
+    <g id="グループ_327" data-name="グループ 327">
+      <g id="グループ_326" data-name="グループ 326">
+        <path id="パス_477" data-name="パス 477" class="cls-1" d="M1459.364,1537.146a21.9,21.9,0,1,1-21.9-21.9,21.9,21.9,0,0,1,21.9,21.9Zm0,0"/>
+        <path id="パス_478" data-name="パス 478" class="cls-1" d="M1459.364,1579.774a21.9,21.9,0,1,1-21.9-21.9,21.9,21.9,0,0,1,21.9,21.9Zm0,0"/>
+        <path id="パス_479" data-name="パス 479" class="cls-2" d="M1457.789,1527.37l-5.609-6.724-23.2,19.332-5.935-5.93-6.193,6.2,11.587,11.587Zm0,0"/>
+        <rect id="長方形_119" data-name="長方形 119" class="cls-2" width="65.689" height="8.759" transform="translate(1472.503 1524.008)"/>
+        <rect id="長方形_120" data-name="長方形 120" class="cls-2" width="74.447" height="8.758" transform="translate(1472.503 1541.525)"/>
+        <path id="パス_480" data-name="パス 480" class="cls-2" d="M1457.789,1571.162l-5.609-6.724-23.2,19.333-5.935-5.93-6.193,6.194,11.587,11.587Zm0,0"/>
+        <rect id="長方形_121" data-name="長方形 121" class="cls-2" width="91.964" height="8.758" transform="translate(1472.503 1567.801)"/>
+        <rect id="長方形_122" data-name="長方形 122" class="cls-2" width="17.517" height="8.758" transform="translate(1472.503 1585.318)"/>
+        <rect id="長方形_123" data-name="長方形 123" class="cls-2" width="65.689" height="8.758" transform="translate(1498.778 1585.318)"/>
+        <path id="パス_481" data-name="パス 481" class="cls-1" d="M1457.789,1614.955l-5.609-6.724-23.2,19.332-5.935-5.929-6.193,6.195,11.587,11.586Zm0,0"/>
+        <rect id="長方形_124" data-name="長方形 124" class="cls-2" width="91.964" height="8.759" transform="translate(1472.503 1611.593)"/>
+        <rect id="長方形_125" data-name="長方形 125" class="cls-2" width="65.689" height="8.758" transform="translate(1472.503 1629.11)"/>
+        <rect id="長方形_126" data-name="長方形 126" class="cls-2" width="17.517" height="8.758" transform="translate(1546.95 1629.11)"/>
+        <rect id="長方形_127" data-name="長方形 127" class="cls-2" width="17.517" height="8.759" transform="translate(1546.95 1524.008)"/>
+        <path id="パス_482" data-name="パス 482" class="cls-2" d="M1634.536,1664.143H1599.5V1484.594a21.92,21.92,0,0,0-21.9-21.9H1398.055a21.9,21.9,0,0,0,0,43.793v227.722h183.93v-26.274H1599.5V1690.42h35.034a13.139,13.139,0,0,0,0-26.277Zm-43.793-179.549v179.549h-8.758V1497.732H1577.6a13.138,13.138,0,1,1,13.139-13.138Zm-205.826,0a13.153,13.153,0,0,1,13.138-13.138H1560.2a21.451,21.451,0,0,0,0,26.276H1398.055a13.153,13.153,0,0,1-13.138-13.138Zm21.9,240.861V1506.491h166.412v157.652H1449.9l-39.409,13.139,39.409,13.138h123.33v35.035Zm31.366-48.173,8.048-2.681v5.36Zm152.564,21.9h-8.758v-8.76h8.758Zm8.759-17.519H1454.985V1672.9H1599.5Zm17.516,0h-8.758V1672.9h8.758Zm17.518,0h-8.76V1672.9h8.76a4.379,4.379,0,0,1,0,8.758Zm0,0"/>
+      </g>
+      <circle id="楕円形_15" data-name="楕円形 15" class="cls-3" cx="212.817" cy="212.817" r="212.817" transform="translate(1299.1 1385.639)"/>
+    </g>
+  </g>
+</svg>

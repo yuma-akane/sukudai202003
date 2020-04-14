@@ -1,0 +1,218 @@
+@media all and (max-width:800px){
+    h1 {font-size:2em;}
+    h2 {font-size:1.5em;}
+    h3 {font-size:1.17em;}
+    h4{font-size: 1rem;}
+    h5{font-size: 0.83em;}
+   
+    .moblie{display: block;}
+   .unmoblie{display: none;}
+   .row.moblie{display: block;}
+   .row.unmoblie{display: none;}
+   .row.moblie-column{flex-direction: column;}
+   .row.moblie-wrap{flex-wrap: wrap;}
+   .row.moblie-top{order: -1;}
+   .container{width: 80%;}
+   .bg_image_full{
+       height: 650px;
+       background-size: cover;
+   }
+   .navbar{padding: 0;}
+   .bar{height: 100px;}
+   /* =========================meun======================================================= */
+   .menu-bar {
+    width: 30px;
+    height: 3px;
+    background: #666;
+    margin: 6px 0;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+   .menu {
+    cursor: pointer;
+    margin-right:1rem ;
+}
+.menu ul {
+    position: absolute;
+    left: 0;
+    top: 43px;
+    background: rgba(255, 255, 255, 0.863);
+    width: 100%;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+.menu.active ul {
+    opacity: 1;
+    max-height: 400px;
+}
+.menu ul li{
+    width: 100%;
+    
+}
+.menu ul li a {
+    color: #00BED6;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+.active .menu-bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 7px);
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.active .menu-bar2 {
+    opacity: 0;
+}
+
+.active .menu-bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+   /* =================index============================================================== */
+   .index-head .bg_image_full{
+       height: 550px;
+       background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .index-head .bg_image_full img{
+        width: 100%;
+    }
+    .index-head .figure{
+        width: 100%;
+    }
+    .index-head .figure div{
+        width: 50%;
+    }
+    /* rwd換不了行 */
+    .index-secend .row.items-start.start{
+        padding: 0;
+    }
+    .index-secend .june24{
+        width: 30%;
+    margin-top: .5rem;}
+    .index-secend .june24 img{
+        padding: 0;
+    }
+    .index-secend  .text h1{
+        margin:0 .5rem;
+    }
+    .book-img div{height:120px;}
+    .index-secend.bg_image_full{
+        height: 600px;
+        padding: 3rem 0;
+    }
+    .index-third .text h1{
+    font-size: 1.7em;
+   }
+   .index-third.bg_image_full{
+       height: 600px;
+   }
+   .index-third a{
+    font-size: 1.7em;
+    width: 250px;
+    height: 55px;
+   }
+   .index-fourth .even{
+       padding: 0;
+   }
+   .index-fourth .row.items-end{
+    align-items: flex-start;
+   }
+   .index-fourth .even>img{
+       width: 100%;
+       margin-bottom: 2rem;
+   }
+   .index-fourth .text h4 img{
+       height: 1.5rem;
+       margin-right: 1rem;
+   }
+   .index-course .text-right{
+       text-align: left;
+   }
+   .index-course .rhino-text{
+       padding: .5em 2em;
+   }
+   /* =================learn============================================================== */
+   .learn-head {
+        height: 700px;
+        padding-top:10rem ;
+   }
+   .learn-head .bg-line{
+       height: 530px;
+   }
+   .learn-secend .image-board{
+       width: 100%;
+   }
+   /* =================course============================================================== */
+   .course-head .text h1{line-height: 10rem;}
+   .course-third h2{margin: 0;}
+   .course-third img{margin: 2rem 0 5rem;}
+   .course-fifth .container{
+       padding: 0;
+   }
+   .course-fifth .icon{padding: 0;}
+   .course-fifth img{
+       margin: 0;
+   }
+   /* ====================about========================== */
+
+   .about .icon{
+       width: 80%;
+       height: auto;
+       padding: 2rem;
+   }
+   .about.you .icon{
+       order:  -1;
+    }
+    .about.map{
+        padding: 2rem 0;
+    }
+    .about.map>img{
+        margin: 0 auto;
+        width: 95%;
+    }
+    .about .text{
+        width: 100%;
+        padding: 2rem;
+    }
+    .about .text p{
+        padding: 0 0 0 3rem;
+    }
+   /* =================footer==================================================== */
+  .footer-logo{
+      width: 100%;
+  }
+  .footer-tel{
+      width: 100%;
+      margin:1rem 0 ;
+  }
+  .footer-tel img{
+      width: 20%;
+  }
+  .footer-tel h4 {
+    font-size: 3.7vw;
+  }
+  .footer-tel a {
+      font-size: 7vw;
+  }
+  .list-inline li:nth-child(4){
+    border-left: 1px solid #595959;
+
+}
+  .list-inline li {
+    margin: .5rem 0;
+    flex: 1 0 33%;}
+.list-inline a{
+    
+        padding: 0;
+    }
+
+}

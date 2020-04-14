@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92.871" height="92.871" viewBox="0 0 92.871 92.871">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: #00bed6;
+      }
+
+      .cls-2 {
+        fill: #ffb71b;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        mix-blend-mode: multiply;
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #0b6c6e;
+      }
+    </style>
+  </defs>
+  <g id="グループ_339" data-name="グループ 339" transform="translate(-1051.364 -5312.679)">
+    <g id="グループ_337" data-name="グループ 337">
+      <path id="パス_512" data-name="パス 512" class="cls-1" d="M1097.8,5405.55a46.434,46.434,0,1,1,32.835-13.6A46.131,46.131,0,0,1,1097.8,5405.55Zm0-90.739a44.3,44.3,0,1,0,44.3,44.3A44.354,44.354,0,0,0,1097.8,5314.811Z"/>
+    </g>
+    <g id="グループ_338" data-name="グループ 338">
+      <circle id="楕円形_16" data-name="楕円形 16" class="cls-2" cx="19.136" cy="19.136" r="19.136" transform="translate(1066.605 5331.899)"/>
+      <circle id="楕円形_17" data-name="楕円形 17" class="cls-3" cx="19.136" cy="19.136" r="19.136" transform="translate(1079.426 5352.059)"/>
+      <circle id="楕円形_18" data-name="楕円形 18" class="cls-4" cx="19.136" cy="19.136" r="19.136" transform="translate(1092.722 5331.899)"/>
+    </g>
+  </g>
+</svg>

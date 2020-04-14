@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="371.829" height="323.032" viewBox="0 0 371.829 323.032">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #0b6768;
+      }
+
+      .cls-1, .cls-10, .cls-12, .cls-14, .cls-16, .cls-3, .cls-5, .cls-7 {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+
+      .cls-1, .cls-10, .cls-12, .cls-14, .cls-16, .cls-3, .cls-5, .cls-8 {
+        font-family: YuGothicUI-Bold, Yu Gothic UI;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #38878d;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #05a3af;
+      }
+
+      .cls-7, .cls-9 {
+        fill: #00b4cb;
+      }
+
+      .cls-7 {
+        font-family: NotoSans-Bold, Noto Sans;
+      }
+
+      .cls-10, .cls-11 {
+        fill: #4fb7a3;
+      }
+
+      .cls-12, .cls-13 {
+        fill: #b8d39b;
+      }
+
+      .cls-14, .cls-15 {
+        fill: #ffb71b;
+      }
+
+      .cls-16, .cls-17 {
+        fill: #ffcd65;
+      }
+
+      .cls-18 {
+        filter: url(#パス_607);
+      }
+
+      .cls-19 {
+        filter: url(#パス_606);
+      }
+
+      .cls-20 {
+        filter: url(#パス_604);
+      }
+
+      .cls-21 {
+        filter: url(#パス_605);
+      }
+
+      .cls-22 {
+        filter: url(#パス_600);
+      }
+
+      .cls-23 {
+        filter: url(#パス_601);
+      }
+
+      .cls-24 {
+        filter: url(#パス_599);
+      }
+
+      .cls-25 {
+        filter: url(#パス_598);
+      }
+    </style>
+    <filter id="パス_598" x="144.505" y="0" width="227.324" height="54.032" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_599" x="0" y="30" width="225.829" height="54.032" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_601" x="144.505" y="80" width="227.324" height="54.031" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_600" x="0" y="110" width="225.829" height="54.031" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_605" x="144.291" y="159" width="227.324" height="54.032" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_604" x="0" y="189" width="225.829" height="54.031" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_606" x="144.505" y="239" width="227.324" height="54.032" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-7"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_607" x="0" y="269" width="225.829" height="54.032" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-8"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_481" data-name="グループ 481" transform="translate(-20.709 -2082)">
+    <g id="グループ_506" data-name="グループ 506" transform="translate(0 44)">
+      <text id="企劃" class="cls-1" transform="translate(262.602 2068.998)"><tspan x="0" y="0">企劃</tspan></text>
+      <g class="cls-25" transform="matrix(1, 0, 0, 1, 20.71, 2038)">
+        <path id="パス_598-2" data-name="パス 598" class="cls-2" d="M531.839,582.532H520.364l14.938,14-16.776,15.72h-73.27l-108.786.007,6.307,6.307h181.05l21.967-22.034Z" transform="translate(-182.96 -576.53)"/>
+      </g>
+    </g>
+    <g id="グループ_505" data-name="グループ 505" transform="translate(0 44)">
+      <text id="專案會議" class="cls-3" transform="translate(94.602 2098.998)"><tspan x="0" y="0">專案會議</tspan></text>
+      <g class="cls-24" transform="matrix(1, 0, 0, 1, 20.71, 2038)">
+        <path id="パス_599-2" data-name="パス 599" class="cls-4" d="M466.646,657.52v.007h180.56l16.776,15.72-14.937,14h11.475l13.955-14-21.967-22.034H472.952Z" transform="translate(683.47 723.24) rotate(180)"/>
+      </g>
+    </g>
+    <g id="グループ_504" data-name="グループ 504" transform="translate(0 33)">
+      <text id="設計" class="cls-5" transform="translate(262.602 2160)"><tspan x="0" y="0">設計</tspan></text>
+      <g class="cls-23" transform="matrix(1, 0, 0, 1, 20.71, 2049)">
+        <path id="パス_601-2" data-name="パス 601" class="cls-6" d="M531.839,582.532H520.364l14.938,14-16.776,15.72h-73.27l-108.786.007,6.307,6.307h181.05l21.967-22.034Z" transform="translate(-182.96 -496.53)"/>
+      </g>
+    </g>
+    <g id="グループ_503" data-name="グループ 503" transform="translate(0 33)">
+      <text id="Feedback_設計修改" data-name="Feedback 
+&amp; 設計修改" class="cls-7" transform="translate(74.602 2171.998)"><tspan x="0" y="0">Feedback </tspan><tspan x="0" y="20">&amp; </tspan><tspan class="cls-8" y="20">設計修改</tspan></text>
+      <g class="cls-22" transform="matrix(1, 0, 0, 1, 20.71, 2049)">
+        <path id="パス_600-2" data-name="パス 600" class="cls-9" d="M466.646,657.52v.007h180.56l16.776,15.72-14.937,14h11.475l13.955-14-21.967-22.034H472.952Z" transform="translate(683.47 803.24) rotate(180)"/>
+      </g>
+    </g>
+    <g id="グループ_501" data-name="グループ 501" transform="translate(0 22)">
+      <text id="開發" class="cls-10" transform="translate(262 2244.998)"><tspan x="0" y="0">開發</tspan></text>
+      <g class="cls-21" transform="matrix(1, 0, 0, 1, 20.71, 2060)">
+        <path id="パス_605-2" data-name="パス 605" class="cls-11" d="M531.839,582.532H520.364l14.938,14-16.776,15.72h-73.27l-108.786.007,6.307,6.307h181.05l21.967-22.034Z" transform="translate(-183.18 -417.53)"/>
+      </g>
+    </g>
+    <g id="グループ_502" data-name="グループ 502" transform="translate(0 22)">
+      <text id="測試" class="cls-12" transform="translate(117.602 2280)"><tspan x="0" y="0">測試</tspan></text>
+      <g class="cls-20" transform="matrix(1, 0, 0, 1, 20.71, 2060)">
+        <path id="パス_604-2" data-name="パス 604" class="cls-13" d="M466.646,657.52v.007h180.56l16.776,15.72-14.937,14h11.475l13.955-14-21.967-22.034H472.952Z" transform="translate(683.47 882.24) rotate(180)"/>
+      </g>
+    </g>
+    <g id="グループ_499" data-name="グループ 499" transform="translate(0 11)">
+      <text id="修改" class="cls-14" transform="translate(262.602 2340.998)"><tspan x="0" y="0">修改</tspan></text>
+      <g class="cls-19" transform="matrix(1, 0, 0, 1, 20.71, 2071)">
+        <path id="パス_606-2" data-name="パス 606" class="cls-15" d="M531.839,582.532H520.364l14.938,14-16.776,15.72h-73.27l-108.786.007,6.307,6.307h181.05l21.967-22.034Z" transform="translate(-182.96 -337.53)"/>
+      </g>
+    </g>
+    <g id="グループ_500" data-name="グループ 500" transform="translate(0 11)">
+      <text id="交件" class="cls-16" transform="translate(117.602 2371)"><tspan x="0" y="0">交件</tspan></text>
+      <g class="cls-18" transform="matrix(1, 0, 0, 1, 20.71, 2071)">
+        <path id="パス_607-2" data-name="パス 607" class="cls-17" d="M466.646,657.52v.007h180.56l16.776,15.72-14.937,14h11.475l13.955-14-21.967-22.034H472.952Z" transform="translate(683.47 962.24) rotate(180)"/>
+      </g>
+    </g>
+  </g>
+</svg>

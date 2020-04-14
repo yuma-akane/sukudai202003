@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="212.324" height="153.783" viewBox="0 0 212.324 153.783">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #ffb71b;
+      }
+
+      .cls-3 {
+        font-size: 44.983px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: SegoeUI, Segoe UI;
+        letter-spacing: 0.05em;
+      }
+
+      .cls-4 {
+        font-size: 48.279px;
+      }
+    </style>
+  </defs>
+  <g id="グループ_210" data-name="グループ 210" transform="translate(-224.224 -2002.346)">
+    <path id="パス_294" data-name="パス 294" class="cls-1" d="M257.377,2152.381H403.395c16.579,0,30.067-16.383,30.067-36.521v-47.645H227.31v47.645C227.31,2136,240.8,2152.381,257.377,2152.381Z"/>
+    <path id="パス_295" data-name="パス 295" class="cls-2" d="M403.395,2002.346H257.377c-18.28,0-33.153,18.064-33.153,40.269v73.245c0,22.2,14.873,40.269,33.153,40.269H403.395c18.28,0,33.153-18.065,33.153-40.269v-73.245C436.548,2020.41,421.675,2002.346,403.395,2002.346Zm30.067,113.514c0,20.138-13.488,36.521-30.067,36.521H257.377c-16.579,0-30.067-16.383-30.067-36.521v-47.645H433.462Z"/>
+    <text id="JUNE" class="cls-3" transform="translate(265.612 2052.914)"><tspan x="0" y="0">JUNE</tspan></text>
+    <text id="_24" data-name="24" class="cls-4" transform="translate(299.536 2127.408)"><tspan x="0" y="0">24</tspan></text>
+  </g>
+</svg>

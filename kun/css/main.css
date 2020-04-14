@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
+h1,h2,h3,h4,h5,h6,a,li,tr{
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 100;
+}
+a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.bg-full{
+    background-size: cover;
+    height: 100vh;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+.bg-white{background: white;}
+.p-relative{position: relative;}
+.p-absolute{position: absolute;}
+
+/* ================ row ================================================= */
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row.start{
+    justify-content: flex-start;
+}
+.row.between{
+    justify-content: space-between;
+}
+.row.end{
+    justify-content:flex-end;
+}
+.row.align-start{
+   align-items: flex-start;
+}
+.row.align-end{
+    align-items: flex-end;
+ }
+.row.stretch{
+    align-items: stretch;
+ }
+ .row.self-end{
+    align-self: flex-end;
+ }
+.row.wrap{
+    flex-wrap: wrap;
+}
+.row.column{
+    flex-direction: column;
+}
+/* ================= title ================================================ */
+.title{
+    position: relative;
+    width:0;
+    height: 80px;
+    left: -10rem;
+    overflow: hidden;
+    transition: .2s;
+}
+.title.add{ width: 300px;}
+.title h1{
+    color: #fff;
+    font-size: 2rem;
+    margin:.5em 0;
+    padding-left: 2rem;
+}
+.title img{
+    position: absolute;
+   width: 300px;
+    bottom:0;
+    left: 0;
+    z-index: -1;
+}
+.a-title,.t-title{
+    position: relative;
+    z-index: 1;
+}
+.a-title h1,.t-title a{
+    font-weight:400;
+    }
+.a-title img,.t-title img{
+    position: absolute;
+    height: 100px;
+    width: auto;
+    left: 4rem;
+    bottom: -1.5rem;
+    z-index: -1;
+}
+.a-title img{
+    transform: rotate(360deg);
+    transition: 1s;
+    opacity: 0;
+}
+.a-title.add img{
+    transform: rotate(0deg);
+    opacity: 1;
+}
+.t-title h2{
+    margin: 0;
+}
+.t-title a{
+    padding: 2rem 4rem 2rem 0 ;
+}
+.t-title>img{   
+     bottom: .5rem;
+     transform: rotate(360deg);
+     transition: 1s;
+}
+.t-title.add>img{   
+    transform: rotate(0deg);
+}
+
+.t-title .line{
+    transform: rotate(-45deg);
+    width: 140px;
+    right: -3rem;
+    bottom: 3rem;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.t-title:hover .line{
+opacity: 1;
+}
+.t-title .line img{
+     width: 100%;
+    height: auto;
+    object-fit: contain; 
+    position: static;
+}
+.tb-title h2{
+    top: 0;
+    left: 2rem;
+    margin: 0;
+    font-weight:400;
+}
+.tb-title img{
+width: 100%;
+}
+/* ================= mask ======================================================= */
+
+.mask-img{
+    mask:no-repeat center center;
+    -webkit-mask:no-repeat center center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    width: 100%;
+    height: 100%;
+
+}
+.mask-img img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ============================ more ================================ */
+.more {
+    margin: 1rem 0;
+}
+.more a.add{ 
+    color: white;
+    width: 140px;
+     right: 0;
+}
+.more a{
+    align-self:flex-end ;
+    max-width: 140px;
+    width:0;
+    max-height: 50px;
+    overflow: hidden;
+    margin: 0;
+    right: 140px;
+    transition: .5s;
+}
+
+.more img{
+    transform: rotate(45deg);
+    left: 1.5rem;
+}
+.more p{
+    bottom: 0;
+    left: 1rem;
+
+}
+
+/* ============================================= body ================================================================================= */
+body>.bg-img{
+    background: url("../img/Group13562x.png") ;
+    background-size: cover;
+    z-index: -10;
+    overflow: hidden;
+    width: 100%;
+}
+.take{
+    width: 100%;
+    bottom:30%;
+    right: -10%;
+    object-fit: contain;
+    z-index: -1;
+    opacity: .5;
+}
+.Group696{
+    width: 100%;
+    bottom:-10%;
+    left: 0;
+    object-fit: contain;
+    z-index: -1;
+    opacity: .5;
+}
+/* ======================== head ============================================================================================================ */
+
+
+.head{
+    background: url("../img/photo/bg.png") no-repeat;
+    background-size: cover;
+    color: #0076BF;
+    padding-top: 5rem;
+    cursor: default;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 73%);
+    z-index: 2;
+}
+.head .row{
+    opacity: .5;
+    mix-blend-mode: luminosity;
+}
+.head .ch{
+    font-size:155px ;
+    letter-spacing:-30px;
+    position: relative;
+    left: -1.5rem;
+    flex: 0 0 auto;
+}
+.head .en{
+    font-size:65px ;
+    text-transform:uppercase;
+}
+.head h1,.head h2{
+    margin: 0;
+    font-family:  'Ma Shan Zheng', cursive;
+    font-weight: 900;
+}
+.head h2{
+    font-family: 'Kalam', cursive;
+    line-height: 80px;
+
+}
+.head h2:first-child{
+    padding-top:7rem;
+}
+.head h2:last-child{
+    padding-left: 19vw;
+}
+
+/* ============================= top-head ===================================================================================================== */
+.top-head .ink{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.top-head .ink img{
+    filter: blur(100%);
+    position: absolute;
+    transform: scale(1);
+
+}
+
+.ink img:nth-child(1){
+    top:10% ;
+    left:40% ;
+}
+.ink img:nth-child(2){
+    top:53% ;
+    left:40% ;
+}
+.ink img:nth-child(3){
+    top:40% ;
+    left:45% ;
+}
+.ink img:nth-child(4){
+    top:60% ;
+    left:60% ;
+}
+.ink img:nth-child(5){
+    top: 20%;
+    left:20% ;
+}
+.ink img:nth-child(6){
+    top: 78%;
+    left:72% ;
+}
+.ink img:nth-child(7){
+    top:50% ;
+    left:15% ;
+}
+.ink img:nth-child(8){
+    top: 30%;
+    left:65% ;
+}
+.ink img:nth-child(9){
+    top:25% ;
+    left:25% ;
+}
+/* ====================================================================================== */
+.top-head.p-relative{
+    top:-222px;
+    left: 0;
+    width: 100%;
+}
+
+.top-head .bg-img{
+    z-index: -1;
+    background: url("../img/MaskGroup3.png");
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.top-head .bg-img .p-absolute:first-child{
+    top: 30rem;
+    width: 50%;
+}
+.top-head .bg-img .p-absolute:last-child{
+    bottom:-30%;
+    right: -30rem;
+    width: 80%;
+}
+
+.top-head .container{
+    padding: 10rem 0;
+}
+.top-head .mask-circle{
+    max-width:500px;
+   max-height: 500px;
+}
+
+.top-head .one .text{
+    margin:3rem 0 5rem 3rem;
+}
+.top-head .one .news{
+    margin-top: 3rem;
+}
+.news .text .no-waper{
+    width: 100%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.news .text .no-waper a{
+    padding: 1rem 0;
+}
+.news .text .no-waper a:hover{
+    text-decoration: dashed 1px black;
+    font-weight: 400;
+}
+.top-head .tew h1{
+    margin: 6rem 0;
+}
+.top-head .hover-title{
+    margin:5rem 10rem 0 6rem ;
+}
+.top-head .tew  .a-title.add:hover img{
+    transform: rotate(360deg);
+    opacity: .5;
+}
+/* ================= mask-circle =============== */
+
+.mask-circle>img{
+    height:100%;
+    width: 100%;
+    object-fit: contain;
+}
+.mask-circle .img-mask {
+    height:100%;
+    width: 100%;
+    mask: url("../img/Path21092.svg")no-repeat center center;
+    -webkit-mask: url("../img/Path21092.svg")no-repeat center center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    bottom:-3%;
+    left: 0;
+    z-index: 3;
+}
+
+.mask-circle .img-mask img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+/* ============================= secend ===================================================================================================== */
+.secend.p-relative{
+    top: -15rem;
+}
+.secend .a-title.p-absolute{
+    top: -8rem;
+    left: 10%;
+    width: 50%;
+}
+.secend .mask.p-relative{
+    top: -10rem;
+}
+.secend .mask .p-absolute{
+    z-index: 1;
+}
+.secend .mask img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.secend .mask-img{
+    height: 40vw;
+    mask-image:url("../img/Path24862.svg");
+    -webkit-mask-image:url("../img/Path24862.svg");
+    mask-size: cover;
+    -webkit-mask-size: cover;
+}
+.vegas{
+    width: 100%;
+    height: 100%;
+
+}
+.secend .more{
+    bottom: 15rem;
+    right: 10rem ;
+    z-index: 3;
+}
+
+/* ==================== map ======================================================================================================== */
+.map .one{
+    top: -25rem;
+}
+.map .one .a-title{top: -1rem;}
+.map-img.mask{
+    top: 0;
+}
+.map-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+    pointer-events: none;
+    
+}
+.map-img>img:last-child{
+    z-index: -1;
+    top: 1rem;
+    left: 1rem;
+    filter: blur(5px);
+    /* -webkit-drop-shadow:1rem 1rem 10px black; */
+}
+.map-img .mask-img{
+    mask-image:url("../img/map.svg");
+    -webkit-mask-image:url("../img/map.svg");
+    box-shadow: 1rem 1rem 10px black;
+}
+/* ======================== park ========================================= */
+
+.park{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.park ul{
+    top: 5rem;
+    left: 0;
+    height: 100%;
+    transition: .5s;
+    padding: 0;
+}
+.park li{
+   width:960px;
+    flex: 0 0 0;
+    margin: 0 auto;
+    padding: 0 rem;
+}
+.map .park{
+    padding-top: 15rem;
+}
+.map .park .mask-img.light{
+    width:100rem;
+}
+.map .park .mask-img{
+    mask-image:url("../img/pick.svg");
+    -webkit-mask-image:url("../img/pick.svg");
+    width:15rem;
+    height: auto;
+}
+
+.about-park{
+    width: 100%;
+    margin-left: 2rem;
+}
+.about-park .text{
+    width: 100%;
+}
+.map .park .pic-img {
+    width: 100%;
+    cursor: pointer;
+}
+/* ========= ctrl ====================================== */
+.ctrl{height: 100%;
+width: 150%;}
+.right-ctrl,
+.left-ctrl {
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    padding: 0 1rem;
+
+}
+
+.right-ctrl {
+    right: 0;
+}
+
+.left,
+.right {
+    border-top: 3rem solid transparent;
+    border-bottom: 3rem solid transparent;
+    opacity: .3;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.left {
+    border-right: 1.5rem solid rgb(51, 51, 51);
+
+}
+
+.right {
+    border-left: 1.5rem solid rgb(51, 51, 51);
+
+}
+
+.left-ctrl:hover .left,
+.right-ctrl:hover .right {
+    opacity: 1;
+}
+/* ========================== excel ================================================================================================ */
+.excel{
+    padding-top: 5rem;
+}
+.table>img{
+    width: 100%;
+}
+table{
+    width: 100%;
+    line-height: 3rem;    
+
+}
+table tr::after{
+    content: "";
+    width: 100%;
+    border-bottom: 1px dashed black;
+}
+.table.tew table {
+    margin-left: 7rem;
+    width: 87%;
+}
+.writings .warpper{
+    padding-left: 7rem;
+}
+.table-a a{
+    margin: 0 2rem;
+}
+.table-a img{
+    width: 50px;
+}
+.table-a h3{
+    margin: 0;
+}
+/* =========================== writings ========================================================================================= */
+.writings{
+    margin: 5rem auto;
+}
+.writings .warpper img{
+    width: 100%;
+    object-fit: contain;
+}
+.writings .warpper figure{
+    width: 100%;
+    margin: 0;
+}
+.writings .warpper p{
+    line-height: 2.5rem;
+}

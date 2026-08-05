@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="big-5">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="../dist/js/jquery.min.js"></script>
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+        <title>生產日報表</title>
+        <style>
+            h2{text-align: center;}
+            h3, h4{font-weight: bold;}
+            .form{
+                margin: 10% auto 10% auto;
+                max-width: 50%;
+            }
+            .form-row{
+                display: flex;
+                flex: 1 1 300px;
+                box-sizing: border-box;
+                padding: 5px;
+                gap: 5px;
+                border-bottom: 1px solid black;
+            }
+            .no-border{
+                border-bottom: none;
+            }
+            .div1, .div2, .div3, .div4, .div5, .div6 .div7{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .div7{
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            .form-row-h4{
+                flex: 0 0 100%;
+                padding: 5px;
+                gap: 5px;
+                background-color: rgb(200, 200, 200);
+            }
+            .form-label{
+                display: flex;
+                width: 180px;
+                font-weight:bold;
+                flex-shrink: 0;
+            }
+            .form-input{
+                flex: 0 1 auto;
+                min-width: 0;
+            }
+            .form-input input{
+                flex:  0 1 auto;
+                min-width: 0;
+                box-sizing: border-box;
+            }
+            .form-group{
+                display: flex;
+                flex: 0 1 auto;
+                gap: 8px;
+                min-width: 0;
+                align-items: center;
+            }
+            .form-group input:last-child(){
+                display: none;
+                flex: 0 1 auto;
+                min-width: 0;
+            }
+            @media screen and (max-width:767px){
+                .form{
+                    max-width: 98%;
+                }
+                .form-row{
+                    flex-direction:column;
+                }
+                .form-row > *{
+                    align-items: flex-start;
+                }
+                .form-group{
+                    flex-direction: row;
+                }
+            }
+            @media screen and (min-width:768px) and (max-width:991px) {
+                .form{
+                    max-width: 90%;
+                }
+            }
+            @media screen and (min-width:992px) and (max-width:1199px) {
+                .form{
+                    max-width: 70%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <form class="form" id="myform" method="post">
+            <input type="hidden" name="btn" id="btn_sel">
+            <h2>生產日報表</h2>
+            <h3>滾壓</h3>
+            <div class="div1">
+            <div class="form-row">
+                <label class="form-label">製單編號</label>
+                <div class="form-input"><input type="text" id="m_no" name="m_no"></div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">日期</label>
+                <input type="date" class="today">
+            </div>
+            <div class="form-row">
+                <label class="form-label">總完工數量(含不良)(M)</label>
+                <div class="form-input"><input type="text"></div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">損耗數量(M)(需註明原因)</label>
+                <div class="form-input"><input type="text"></div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">滾壓shim使用量</label>
+                <select name="select1" id="select1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            </div>
+            <div class="div2">
+            <div class="form-row-h4">
+                <h4>核對製單</h4>
+            </div>
+            <div class="form-row">
+                <label class="form-label">膜料廠商</label>
+                <select name="select2" id="select2">
+                    <option value="九星">九星</option>
+                    <option value="岱稜">岱稜</option>
+                    <option value="農寶">農寶</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label class="form-label">膜料顏色</label>
+                <select name="select3" id="select3">
+                    <option value="銀">銀</option>
+                    <option value="金">金</option>
+                    <option value="透明">透明</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label class="form-label">膜料材質</label>
+                <select name="select4" id="select4">
+                    <option value="貼合">貼合</option>
+                    <option value="全破">全破</option>
+                    <option value="VOID">VOID</option>
+                    <option value="蜂巢">蜂巢</option>
+                    <option value="燙金">燙金</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label class="form-label">核對刀模圖<br>(圖形、接版尺寸、方向)</label>
+                <div class="form-group">
+                    <input type="radio" id="ok1" name="radio1" value="OK">
+                    <label for="ok1">OK</label>
+                    <input type="radio" id="ng1" name="radio1" value="NG">
+                    <label for="ng1">NG</label>
+                    <input type="text" class="radio-input" id="input1" readonly>
+                </div>
+            </div>
+            </div>
+            <div class="div3">
+            <div class="form-row-h4">
+                <h4>核對前製程</h4>
+            </div>
+            <div class="form-row">
+                <label class="form-label">滾壓版厚度(標準大版規格38~60 &#181;m，小版規格40~65 &#181;m)</label>
+                <div class="form-group">
+                    <input type="radio" id="ok2" name="radio2" value="OK">
+                    <label for="ok2">OK</label>
+                    <input type="radio" id="ng2" name="radio2" value="NG">
+                    <label for="ng2">NG</label>
+                    <input type="text" class="radio-input" id="input2" readonly>
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">凹凸點檢查，拆版，燒焦<br>(不可有)正版方向</label>
+                <div class="form-group">
+                    <input type="radio" id="ok3" name="radio3" value="OK">
+                    <label for="ok3">OK</label>
+                    <input type="radio" id="ng3" name="radio3" value="NG">
+                    <label for="ng3">NG</label>
+                    <input type="text" class="radio-input" id="input3 readonly">
+                </div>
+            </div>
+            </div>
+            <div class="div4">
+            <div class="form-row-h4">
+                <h4>機器檢查</h4>
+            </div>
+            <div class="form-row">
+                <label class="form-label">機台檢查</label>
+                <div class="form-group">
+                    <input type="radio" id="ok4" name="radio4" value="OK">
+                    <label for="ok4">OK</label>
+                    <input type="radio" id="ng4" name="radio4" value="NG">
+                    <label for="ng4">NG</label>
+                    <input type="text" class="radio-input" id="input4" readonly>
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">溫度控制檢查</label>
+                <div class="form-group">
+                    <input type="radio" id="ok5" name="radio5" value="OK">
+                    <label for="ok5">OK</label>
+                    <input type="radio" id="ng5" name="radio5" value="NG">
+                    <label for="ng5">NG</label>
+                    <input type="text" class="radio-input" id="input5" readonly>
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">前張力/後張力(kg)</label>
+                <div class="form-group">
+                    <div class="form-input"><input type="text"></div>
+                    <div class="form-input"><input type="text"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">架版檢查<br>(對位尾線相接 0.3mm)</label>
+                <div class="form-group">
+                    <input type="radio" id="ok6" name="radio6" value="OK">
+                    <label for="ok6">OK</label>
+                    <input type="radio" id="ng6" name="radio6" value="NG">
+                    <label for="ng6">NG</label>
+                    <input type="text" class="radio-input" id="input6" readonly>
+                </div>
+            </div>
+            </div>
+            <div class="div5">
+            <div class="form-row-h4">
+                <h4>首末件檢查</h4>
+            </div>
+            <div class="form-row">
+                <label class="form-label">無髒點、無壓印不明</label>
+                <div class="form-group">
+                    <input type="radio" id="ok7" name="radio7" value="OK">
+                    <label for="ok7">OK</label>
+                    <input type="radio" id="ng7" name="radio7" value="NG">
+                    <label for="ng7">NG</label>
+                    <input type="text" class="radio-input" id="input7" readonly>
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">核對透明片(舊刀)or網片</label>
+                <div class="form-group">
+                    <input type="radio" id="ok8" name="radio8" value="有">
+                    <label for="ok8">有</label>
+                    <input type="radio" id="ng8" name="radio8" value="無">
+                    <label for="ng8">無</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">樣品比對</label>
+                <div class="form-group">
+                    <input type="radio" id="ok9" name="radio9" value="OK">
+                    <label for="ok9">OK</label>
+                    <input type="radio" id="ng9" name="radio9" value="NG">
+                    <label for="ng9">NG</label>
+                    <input type="text" class="radio-input" id="input9" readonly>
+                    <input type="radio" id="other" name="radio9" value="OTHER">
+                    <label for="other">新單無附錄</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">周長(mm)<br>(標準+0.3-0.2/取樣420 ±50)</label>
+                <div class="form-group">
+                    <div class="form-input"><input type="text"></div>
+                    <div class="form-input"><input type="text"></div>
+                </div>
+            </div>
+            </div>
+            <div class="div6">
+            <div class="form-row-h4">
+                <h4>製程中檢查</h4>
+            </div>
+            <div class="form-row">
+                <label class="form-label">空白區數據/電眼數據<br>(銀色7000▲3000▼<br>透明3400▲2000▼)</label>
+                <div class="form-group">
+                    <div class="form-input"><input type="text"></div>
+                    <div class="form-input"><input type="text"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">生產速度_M/分</label>
+                <div class="form-input"><input type="text"></div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">生產壓力kg/cm2<br>(1號機24~34 4號機10~28)</label>
+                <div class="form-input"><input type="text"></div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">生產溫度 (°C)<br>設定溫度/量測溫度<br>((-5&le;設定-實際)&le;10)</label>
+                <div class="form-group">
+                    <div class="form-input"><input type="text"></div>
+                    <div class="form-input"><input type="text"></div>
+                </div>
+            </div>
+            </div>
+            <div class="div7">
+            <div class="form-row">
+                <label class="form-label">異常狀況</label>
+                <select name="select5" id="select5">
+                    <option value="滾壓偏移">滾壓偏移</option>
+                    <option value="暗區">暗區</option>
+                    <option value="髒點">髒點</option>
+                    <option value="皺褶">皺褶</option>
+                    <option value="無異常">無異常</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label class="form-label">生產人員(製表人員)簽章</label>
+                <div class="form-input"><input type="text" disabled></div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">其他備註事項</label>
+                <div class="form-input"><input type="text"></div>
+            </div>
+            </div>
+            <div class="div8">
+            <input class="btn btn-primary" id="btn-ok" type="button" style="font-size: 18px; margin-top: 10px;" onclick="askForSubmit('A')" value="送出">
+            </div>
+        </form>
+        <script>
+            /*預設日期為當天*/
+            document.querySelector(".today").valueAsDate = new Date();
+            /*判斷radio是否選擇NG欄位*/
+            document.querySelectorAll(".form-group").forEach(function(x) {
+                var chk = x.querySelectorAll("input[type=radio]");
+                var text = x.querySelector(".radio-input");
+                function readonlychange(){
+                    var y = x.querySelector("input[type=radio]:checked");
+                    if (y != null) {
+                        if (y.value == "NG") {
+                            text.readOnly = false;
+                        } else {
+                            text.readOnly = true;
+                            text.value = "";
+                        }
+                    }
+                }
+                chk.forEach(function(z){
+                    z.addEventListener("change", readonlychange);
+                });
+                readonlychange();
+            });
+            /*點擊送出(form資料還需要調整-C60707)*/
+            function askForSubmit(btn) {
+                document.forms['myform'].action='m083.acu';
+                document.forms['myform'].submit();
+            }
+            /*判斷每個段落最下面一列沒有底線*/
+            function border_bottom(){
+                document.querySelectorAll(".div1, .div2, .div3, .div4, .div5, .div6, .div7").forEach(y => {
+                    var z = y.querySelectorAll(".form-row");
+
+                    z.forEach(a => a.classList.remove("no-border"));
+
+                    var maxtop = Math.max(...Array.from(z).map(a => a.offsetTop));
+
+                    z.forEach(a => {
+                        if (a.offsetTop == maxtop) {
+                            a.classList.add("no-border");
+                        } else if (Math.abs(a.offsetTop - maxtop) <= 2) {
+                            a.classList.add("no-border");
+                        }
+                    });
+                });
+            }
+            /*網頁載入完成後執行一次*/
+            border_bottom();
+            /*使用者改變視窗大小時執行*/
+            window.addEventListener("resize", border_bottom);
+        </script>
+    </body>
+</html>

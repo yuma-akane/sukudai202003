@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="big-5">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- <script src="../dist/js/jquery.min.js"></script> -->
+        <!-- <link rel="shortcut icon" type="image/png" href="../images/favicon.png"> -->
+        <title>製程</title>
+        <style>
+            .center{
+                text-align: center;
+            }
+            .right{
+                text-align: right;
+            }
+            .m_form{
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+            .div1{
+                width: 100%;
+                flex: 0 0 auto;
+            }
+            .div1-1{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-bottom: 1px solid black;
+            }
+            .div1-1:first-child{
+                background-color: rgb(200,200,200);
+            }
+            .div1-1:last-child{
+                border: none;
+            }
+            .div1-1:not(:first-child):hover{
+                background-color: aquamarine;
+            }
+            .div-click{
+                background-color: aquamarine;
+            }
+            .div1-1 > div:first-child{
+                flex: 1;
+                min-width: 32px;
+            }
+            .div1-1 > div:nth-child(2),
+            .div1-1 > div:nth-child(7){
+                flex: 2;
+                min-width: 80px;
+            }
+            .div1-1 > div:nth-child(3){
+                flex: 5;
+                min-width: 220px;
+            }
+            .div1-1 > div:nth-child(4){
+                flex: 3;
+                min-width: 95px;
+            }
+            .div1-1 > div:nth-child(5),
+            .div1-1 > div:nth-child(6){
+                flex: 4;
+                min-width: 110px;
+            }
+            .div2{
+                flex: 1;
+                overflow: hidden;
+                min-height: 300px;
+            }
+            .div2 iframe{
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+            @media screen and (max-width:800px){
+                .div1-1{
+                    flex-wrap: wrap;
+                }
+                .div1-1 > div{
+                    flex: none;
+                    min-width: none;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+                .div1-1 > div:nth-child(1){
+                    flex: 0 0 10%;
+                }
+                .div1-1 > div:nth-child(2){
+                    flex: 0 0 20%;
+                }
+                .div1-1 > div:nth-child(3){
+                    flex: 0 0 66%;
+                }
+                .div1-1 > div:nth-child(4){
+                    flex: 0 0 23%;
+                }
+                .div1-1 > div:nth-child(5){
+                    flex: 0 0 26%;
+                }
+                .div1-1 > div:nth-child(6){
+                    flex: 0 0 26%;
+                }
+                .div1-1 > div:nth-child(7){
+                    flex: 0 0 19%;
+                }
+            }
+            @media screen and (min-width:801px){
+                .div1-1{
+                    height: 60px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <input type="hidden" id="m_no" value="C6020012"><!--
+        <input type="hidden" id="m_no" value="%%a-moc017-01%%">
+        <input type="hidden" id="alldata1" value = "%%a-moc017-04-string%%">
+        <input type="hidden" id="alldata2" value = "%%a-moc017-05-string%%">
+        <input type="hidden" id="alldata3" value = "%%a-doc02-03-string%%">
+        <input type="hidden" id="alldata4" value = "%%a-moc017-07-string%%">
+        <input type="hidden" id="alldata5" value = "%%a-moc017-08-string%%">
+        <input type="hidden" id="alldata6" value = "%%a-moc017-09-string%%">
+        <input type="hidden" id="alldata7" value = "%%a-doc02-03-1-string%%">-->
+        <form id="m_form" class="m_form">
+            <div id="div1" class="div1">
+                <div class="div1-1 center">
+                    <div>序號</div>
+                    <div>製程編號</div>
+                    <div>製程名稱</div>
+                    <div>製造批數</div>
+                    <div>製費單價</div>
+                    <div>製造費用</div>
+                    <div>製造部門</div>
+                </div>
+                <div class="div1-1" onclick="gohtml('0', this)">
+                    <div class="right">1</div>
+                    <div>0008</div>
+                    <div>電鑄滾壓板</div>
+                    <div class="right">1.00</div>
+                    <div class="right">350.0000</div>
+                    <div class="right">350.0000</div>
+                    <div>凌雲生產</div>
+                </div>
+                <div class="div1-1" onclick="gohtml('1', this)">
+                    <div class="right">2</div>
+                    <div>0009</div>
+                    <div>滾壓</div>
+                    <div class="right">1200.00</div>
+                    <div class="right">0.5000</div>
+                    <div class="right">600.0000</div>
+                    <div>凌雲生產</div>
+                </div>
+                <div class="div1-1" onclick="gohtml('2', this)">
+                    <div class="right">3</div>
+                    <div>0010</div>
+                    <div>褙膠</div>
+                    <div class="right">1200.00</div>
+                    <div class="right">0.5000</div>
+                    <div class="right">600.0000</div>
+                    <div>淩雲生產</div>
+                </div>
+                <div class="div1-1" onclick="gohtml('3', this)">
+                    <div class="right">4</div>
+                    <div>0015</div>
+                    <div>分條</div>
+                    <div class="right">1200.00</div>
+                    <div class="right">0.2000</div>
+                    <div class="right">240.0000</div>
+                    <div>淩雲生產</div>
+                </div>
+                <div class="div1-1" onclick="gohtml('4', this)">
+                    <div class="right">5</div>
+                    <div>0011</div>
+                    <div>鍘型/裁切/切割</div>
+                    <div class="right">1200.00</div>
+                    <div class="right">0.4000</div>
+                    <div class="right">480.0000</div>
+                    <div>淩雲生產</div>
+                </div>
+                <div class="div1-1" onclick="gohtml('5', this)">
+                    <div class="right">6</div>
+                    <div>0099</div>
+                    <div>成品品檢</div>
+                    <div class="right">1200.00</div>
+                    <div class="right">0.3000</div>
+                    <div class="right">360.0000</div>
+                    <div>淩雲生產</div>
+                </div>
+        </div>
+            <div id="div2" class="div2"></div>
+        </form>
+        <script>/*
+            var data1 = document.getElementById("alldata1").value.split(",");
+            var data2 = document.getElementById("alldata2").value.split(",");
+            var data3 = document.getElementById("alldata3").value.split(",");
+            var data4 = document.getElementById("alldata4").value.split(",");
+            var data5 = document.getElementById("alldata5").value.split(",");
+            var data6 = document.getElementById("alldata6").value.split(",");
+            var data7 = document.getElementById("alldata7").value.split(",");
+            function addtable(){
+                var div1_html = '<div class="div1-1 center"><div>序號</div><div>製程編號</div><div>製程名稱</div><div>製造批數</div><div>製費單價</div>'
+                              + '<div>製造費用</div><div>製造部門</div></div>';
+                for(var i=0;i<data1.length;i++){
+
+                        div1_html += '<div class="div1-1" onclick="gohtml(' + "'" + i + "', this)" + '"><div class="right">' + Number(data1[i]) + '</div>'
+                                   + '<div>' + data2[i] + '</div>'
+                                   + '<div>' + data3[i] + '</div>'
+                                   + '<div class="right">' + (Number(data4[i]) / 100).toFixed(2) + '</div>'
+                                   + '<div class="right">' + (Number(data5[i]) / 10000).toFixed(4) + '</div>'
+                                   + '<div class="right">' + (Number(data6[i]) / 10000).toFixed(4) + '</div>'
+                                   + '<div>' + data7[i] + '</div></div>';
+                }
+                document.getElementById("div1").innerHTML = div1_html;
+                console.log(data1);
+                console.log(data2);
+                console.log(data3);
+                console.log(data4);
+                console.log(data5);
+                console.log(data6);
+                console.log(data7);
+            }
+            addtable();*//*
+            var lock = false;
+            var iframe = document.getElementById("myFrame");
+            var iframe_doc = iframe.contentDocument;
+            var iframe_btn = iframe_doc.getElementById("btn-ok");
+            iframe_btn.addEventListener("click", function(){
+                lock = true;
+            })
+            checklock
+            function checklock(){
+
+            }
+            //window.addEventListener("beforeunload", function(a) )*/
+            function gohtml(a, div){
+                $('div.div1-1').removeClass('div-click');
+                div.classList.add('div-click');
+                //下面一段if是demo新增的
+                var div2_html
+                if(a==="1"){
+                    div2_html = "./m106.html";
+                    console.log(div2_html);
+                    
+                }
+                /*
+                var div2_html = "../t" + data2[a] + ".html";
+                if(data2[a] === "0009"){
+                    div2_html = "../m106.html";
+                }*/
+                fetch(div2_html, {method:"HEAD"}).then(response => {
+                    if(!response.ok){
+                        document.getElementById("div2").replaceChildren();
+                        return;
+                    }
+                    console.log(div2_html);
+                    var iframe_name = document.createElement("iframe");
+                    iframe_name.id = "myFrame";
+                    iframe_name.src = div2_html;
+                    document.getElementById("div2").replaceChildren();
+                    document.getElementById("div2").appendChild(iframe_name);
+                    iframe_name.onload = function(){
+                        iframe_name.contentDocument.getElementById("m_no").value = document.getElementById("m_no").value;
+                    }
+                })
+            }
+        </script>
+    </body>
+</html>

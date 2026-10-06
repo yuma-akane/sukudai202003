@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="../dist/js/jquery.min.js"></script>
         <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
-        <title>»sµ{</title>
+        <title>è£½ç¨‹</title>
         <style>
             .center{
                 text-align: center;
@@ -90,16 +90,16 @@
                 display: none;
             }
             .modal{
-                display: none; /* ¹w³]ÁôÂÃ */
-                position: fixed; /* ©T©w¦ì¸m */
-                z-index: 1000; /* ½T«O¦b³Ì³»¼h */
+                display: none; /* é è¨­éš±è— */
+                position: fixed; /* å›ºå®šä½ç½® */
+                z-index: 1000; /* ç¢ºä¿åœ¨æœ€é ‚å±¤ */
                 padding-top: 80px;
                 left: 0;
                 top: 0;
                 width: 100%;
                 height: 100%;
                 overflow: auto;
-                background-color: rgba(0, 0, 0, 0.5); /* ¶Â¦â¥b³z©ú­I´º */
+                background-color: rgba(0, 0, 0, 0.5); /* é»‘è‰²åŠé€æ˜èƒŒæ™¯ */
             }
             .modal-content{
                 margin: auto;
@@ -191,22 +191,22 @@
             <div class="modal_content">
                 <span class="close" id="close">x</span>
                 <center style="background-color: white;height: 45px;">
-                    <input type="radio" id="radio1_one" name="radio1" value="¼öº²½¦">
-                    <label for="radio1_one">¼öº²½¦</label>
-                    <input type="radio" id="radio1_two" name="radio1" value="¿Sª÷½¦&À£§J¤O½¦">
-                    <label for="radio1_two">¿Sª÷½¦&À£§J¤O½¦</label>
+                    <input type="radio" id="radio1_one" name="radio1" value="ç†±ç†”è† ">
+                    <label for="radio1_one">ç†±ç†”è† </label>
+                    <input type="radio" id="radio1_two" name="radio1" value="ç‡™é‡‘è† &å£“å…‹åŠ›è† ">
+                    <label for="radio1_two">ç‡™é‡‘è† &å£“å…‹åŠ›è† </label>
                 </center>
                 <div id="sel" class="sel_div">
                     <center>
-                        <button id="btn_ok" style="color: black;">½T©w</button>
+                        <button id="btn_ok" style="color: black;">ç¢ºå®š</button>
                         &nbsp;
-                        <button id="btn_cancel" style="color: black;">¨ú®ø</button>
+                        <button id="btn_cancel" style="color: black;">å–æ¶ˆ</button>
                     </center>
                 </div>
             </div>
         </div>
         <script>
-            /*»sµ{¸ê®Æ*/
+            /*è£½ç¨‹è³‡æ–™*/
             var data1 = document.getElementById("alldata1").value.split(",");
             var data2 = document.getElementById("alldata2").value.split(",");
             var data3 = document.getElementById("alldata3").value.split(",");
@@ -216,8 +216,8 @@
             var data7 = document.getElementById("alldata7").value.split(",");
             var data8 = document.getElementById("alldata8").value.split(",");
             function addtable(){
-                var div1_html = '<div class="div1-1 center"><div>§Ç¸¹</div><div>»sµ{½s¸¹</div><div>»sµ{¦WºÙ</div><div>»s³y§å¼Æ</div><div>»s¶O³æ»ù</div>'
-                              + '<div>»s³y¶O¥Î</div><div class="last">»s³y³¡ªù</div></div>';
+                var div1_html = '<div class="div1-1 center"><div>åºè™Ÿ</div><div>è£½ç¨‹ç·¨è™Ÿ</div><div>è£½ç¨‹åç¨±</div><div>è£½é€ æ‰¹æ•¸</div><div>è£½è²»å–®åƒ¹</div>'
+                              + '<div>è£½é€ è²»ç”¨</div><div class="last">è£½é€ éƒ¨é–€</div></div>';
                 for(var i=0;i<data1.length;i++){
 
                         div1_html += '<div class="div1-1" onclick="gohtml(' + "'" + i + "', this)" + '"><div class="right">' + Number(data1[i]) + '</div>'
@@ -234,7 +234,7 @@
             }
             addtable();
 
-            /*ÂIÀ»»sµ{«á¥Îiframe¶}±Ò¬ÛÀ³»sµ{ªº¥Í²£¤é³øªí*/
+            /*é»æ“Šè£½ç¨‹å¾Œç”¨iframeé–‹å•Ÿç›¸æ‡‰è£½ç¨‹çš„ç”Ÿç”¢æ—¥å ±è¡¨*/
             var iframe;
             var form;
             var oldFormData;
@@ -245,7 +245,7 @@
                 iframe = document.getElementById("myFrame");
                 if(iframe){
                     if(isFormModify() && !iframe.contentWindow.canCloseIframe()){
-                        var result = confirm('¨t²Î¤£·|Àx¦s§A©Ò°µªºÅÜ§ó¡C');
+                        var result = confirm('ç³»çµ±ä¸æœƒå„²å­˜ä½ æ‰€åšçš„è®Šæ›´ã€‚');
                         if(!result){
                             return;
                         }
@@ -303,7 +303,7 @@
                     }
                 })
             }
-            /*ÂIÀ»®i¶}©M¦¬¦^»sµ{Äæ¦ì*/
+            /*é»æ“Šå±•é–‹å’Œæ”¶å›è£½ç¨‹æ¬„ä½*/
             var div_chk = document.querySelectorAll("#div1 > div");
             function display_none(){
                 for(var i=1;i<div_chk.length - 1;i++){
@@ -321,7 +321,7 @@
                 document.getElementById("none").style.display="flex";
                 document.getElementById("flex").style.display="none";
             }
-            /*ÂIÀ»çÈ½¦»sµ{®ÉÅı¨Ï¥ÎªÌ¿ï¾Ü¶}±ÒçÈ½¦-¼öº²½¦©Î¬OçÈ½¦-¿Sª÷½¦&À£§J¤O*/
+            /*é»æ“Šè¤™è† è£½ç¨‹æ™‚è®“ä½¿ç”¨è€…é¸æ“‡é–‹å•Ÿè¤™è† -ç†±ç†”è† æˆ–æ˜¯è¤™è† -ç‡™é‡‘è† &å£“å…‹åŠ›*/
             async function choice(a){
                 open_modal(a);
                 var chk_modal = await close_modal();
@@ -332,7 +332,7 @@
                 if(x===null){
                     return;
                 }
-                if(x.value==="¼öº²½¦"){
+                if(x.value==="ç†±ç†”è† "){
                     div2_html = "../t" + a + "a.html";
                 }else{
                     div2_html = "../t" + a + "b.html";
@@ -366,7 +366,7 @@
             }
         </script>
         <script>
-            /*±NÂIÀ»°e¥X«ö¶sªº¸ê®Æ©ñ¶iÅÜ¼Æ*/
+            /*å°‡é»æ“Šé€å‡ºæŒ‰éˆ•çš„è³‡æ–™æ”¾é€²è®Šæ•¸*/
             function getFormData(form){
                 var data={};
 
@@ -382,7 +382,7 @@
                 });
                 return data;
             }
-            /*§PÂ_¥Í²£¤é³øªí¸ê®Æ¬O§_¦³­×§ï*/
+            /*åˆ¤æ–·ç”Ÿç”¢æ—¥å ±è¡¨è³‡æ–™æ˜¯å¦æœ‰ä¿®æ”¹*/
             function isFormModify(){
                 if(!form||!oldFormData){
                     return false;
@@ -390,13 +390,13 @@
                 var currentDara = getFormData(form);
                 return JSON.stringify(oldFormData)!==JSON.stringify(currentDara);
             }
-            /*§PÂ_iframe¤ºÂIÀ»°e¥X«ö¶s«á°õ¦ægetFormData±N¾ã²z«áªº¸ê®Æ©ñ¶iÅÜ¼Æ*/
+            /*åˆ¤æ–·iframeå…§é»æ“Šé€å‡ºæŒ‰éˆ•å¾ŒåŸ·è¡ŒgetFormDataå°‡æ•´ç†å¾Œçš„è³‡æ–™æ”¾é€²è®Šæ•¸*/
             window.addEventListener("message", function(event){
                 if (event.data.type === "click"){
                     window[num] = getFormData(form);
                 }
             });
-            /*±N¥Ø«eÅã¥Üªº»sµ{·s¼W¹ïÀ³ªºÅÜ¼Æ*/
+            /*å°‡ç›®å‰é¡¯ç¤ºçš„è£½ç¨‹æ–°å¢å°æ‡‰çš„è®Šæ•¸*/
             function newvar(){
                 for(var i;i<data1.length;i++){
                     if(data2[i]==="0010"){

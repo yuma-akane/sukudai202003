@@ -11,7 +11,7 @@
         <script src="js/mo.js"></script>
         <script src="js/mo_user.js"></script>
         <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
-        <title>¥Í²£¤é³øªí</title>
+        <title>ç”Ÿç”¢æ—¥å ±è¡¨</title>
         <style>
             body{
                 font-family: Arial, Helvetica, sans-serif;
@@ -19,16 +19,16 @@
                 padding: 5px;
             }
             .modal{
-                display: none; /* ¹w³]ÁôÂÃ */
-                position: fixed; /* ©T©w¦ì¸m */
-                z-index: 1000; /* ½T«O¦b³Ì³»¼h */
+                display: none; /* é è¨­éš±è— */
+                position: fixed; /* å›ºå®šä½ç½® */
+                z-index: 1000; /* ç¢ºä¿åœ¨æœ€é ‚å±¤ */
                 padding-top: 80px;
                 left: 0;
                 top: 0;
                 width: 100%;
                 height: 100%;
                 overflow: auto;
-                background-color: rgba(0, 0, 0, 0.5); /* ¶Â¦â¥b³z©ú­I´º */
+                background-color: rgba(0, 0, 0, 0.5); /* é»‘è‰²åŠé€æ˜èƒŒæ™¯ */
             }
             .modal-content{
                 margin: auto;
@@ -63,7 +63,7 @@
                 position: sticky;
                 top: 0;
                 background-color: #e0dfdf;
-                z-index: 2; /* ½T«O¦bºu°Ê®É«O«ù¦b³Ì¤W¼h */
+                z-index: 2; /* ç¢ºä¿åœ¨æ»¾å‹•æ™‚ä¿æŒåœ¨æœ€ä¸Šå±¤ */
             }
             .scrollable-div{
                 width: 100%;
@@ -150,24 +150,24 @@
             <div class="card open" data-has style="display: block;">
                 <div>
                     <div class="m_no1">
-                        <h4>»s³æ½s¸¹</h4>
+                        <h4>è£½å–®ç·¨è™Ÿ</h4>
                         <input disabled type="text" id="m_no1" name="m_no1">
-                        <button type="button" onclick="modal_open()">»s³æ¬d¸ß</button>
+                        <button type="button" onclick="modal_open()">è£½å–®æŸ¥è©¢</button>
                     </div>
                     <div class="m_unit">
-                        <h4>¥Í²£³æ¦ì</h4>
+                        <h4>ç”Ÿç”¢å–®ä½</h4>
                         <input disabled type="text" id="m_unit">
                         <input disabled type="text" id="m_unit_doc">
                     </div>
                 </div>
                 <div>
                     <div class="m_user">
-                        <h4>»sªí¤H­û</h4>
+                        <h4>è£½è¡¨äººå“¡</h4>
                         <input disabled type="text" id="m_user">
-                        <button type="button" onclick="modal_open_user()">¤H­û¬d¸ß</button>
+                        <button type="button" onclick="modal_open_user()">äººå“¡æŸ¥è©¢</button>
                     </div>
                     <div>
-                        <h4>²Õ§O</h4>
+                        <h4>çµ„åˆ¥</h4>
                         <select id="m_team_doc"></select>
                     </div>
                 </div>
@@ -176,10 +176,10 @@
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <h3>
-                    »s³æ¬d¸ß
+                    è£½å–®æŸ¥è©¢
                     <span class="close" onclick="close_modal('N')">x</span>
                 </h3>
-                <input type="search" id="search_txt" class="search_txt" placeholder="¿é¤J»s³æ½s¸¹">
+                <input type="search" id="search_txt" class="search_txt" placeholder="è¼¸å…¥è£½å–®ç·¨è™Ÿ">
                 <button id="search_btn" class="search_btn" onclick="search()">&#128269;</button>
                 <br>
                 <div class="scrollable-div">
@@ -187,9 +187,9 @@
                 </div>
                 <div id="sel_ord" class="sel_div">
                     <center>
-                        <button id="mo_btn_ok" style="color: black;" onclick="close_modal('Y')">½T©w</button>
+                        <button id="mo_btn_ok" style="color: black;" onclick="close_modal('Y')">ç¢ºå®š</button>
                         &nbsp;
-                        <button id="mo_btn_cancel" style="color: black;" onclick="close_modal('N')">¨ú®ø</button>
+                        <button id="mo_btn_cancel" style="color: black;" onclick="close_modal('N')">å–æ¶ˆ</button>
                     </center>
                 </div>
             </div>
@@ -197,10 +197,10 @@
         <div id="myModal_user" class="modal">
             <div class="modal-content">
                 <h3>
-                    »sªí¤H­û
+                    è£½è¡¨äººå“¡
                     <span class="close" onclick="close_modal_user('N')">x</span>
                 </h3>
-                <input type="search" id="search_txt_user" class="search_txt" placeholder="¿é¤J¤H­û¥N¸¹">
+                <input type="search" id="search_txt_user" class="search_txt" placeholder="è¼¸å…¥äººå“¡ä»£è™Ÿ">
                 <button id="search_user_btn" class="search_btn" onclick="search_user()">&#128269;</button>
                 <br>
                 <div class="scrollable-div">
@@ -208,15 +208,15 @@
                 </div>
                 <div id="user_sel_ord" class="sel_div">
                     <center>
-                        <button id="user_btn_ok" style="color: black;" onclick="close_modal_user('Y')">½T©w</button>
+                        <button id="user_btn_ok" style="color: black;" onclick="close_modal_user('Y')">ç¢ºå®š</button>
                         &nbsp;
-                        <button id="user_btn_cancel" style="color: black;" onclick="close_modal_user('N')">¨ú®ø</button>
+                        <button id="user_btn_cancel" style="color: black;" onclick="close_modal_user('N')">å–æ¶ˆ</button>
                     </center>
                 </div>
             </div>
         </div>
-        <script>//»s³æ½s¸¹
-            /*¶}±Ò»s³æ·j´Mmodal*/
+        <script>//è£½å–®ç·¨è™Ÿ
+            /*é–‹å•Ÿè£½å–®æœå°‹modal*/
             function modal_open(){
                 document.getElementById("myModal").style.display = "block";
                 document.getElementById('mo_table').innerHTML = '';
@@ -226,7 +226,7 @@
                 document.getElementById('m_unit_doc').value = '';
                 document.getElementById('mo_btn_ok').disabled = '';
             }
-            /*Ãö³¬modal*/
+            /*é—œé–‰modal*/
             function close_modal(val) {
                 if (val=="N"){
                     document.getElementById('m_no1').value = '';
@@ -254,7 +254,7 @@
                 }
             });
 
-            /*Åã¥Ü»s³æ¸ê®Æ*/
+            /*é¡¯ç¤ºè£½å–®è³‡æ–™*/
             function search(){
                 document.getElementById("m_no").value = "";
                 document.getElementById("m_unit").value = "";
@@ -264,8 +264,8 @@
                 for(var i=0;i<mo_list.length;i++){
                     if(mo_list[i].m_no.includes(s_txt)==true || s_txt==""){
                         if(table_html==""){
-                            table_html = '<thead><tr><th>»s³æ½s¸¹</th><th colspan="2">¥Í²£³æ¦ì</th><th>¹w©w¶}¤u</th><th>¹w©w§¹¤u</th>'
-                                       + '<th>®Æ«~½s¸¹</th><th>«~¦W³W®æ</th></tr></thead><tbody>';
+                            table_html = '<thead><tr><th>è£½å–®ç·¨è™Ÿ</th><th colspan="2">ç”Ÿç”¢å–®ä½</th><th>é å®šé–‹å·¥</th><th>é å®šå®Œå·¥</th>'
+                                       + '<th>æ–™å“ç·¨è™Ÿ</th><th>å“åè¦æ ¼</th></tr></thead><tbody>';
                         }
                         table_html += '<tr class="tr_row" onclick="row_click(this)"><td>' + mo_list[i].m_no
                                     + '</td><td>' + mo_list[i].m_unit       + '</td><td>' + mo_list[i].m_unit_doc
@@ -275,14 +275,14 @@
                     }
                 }
                 if(table_html==""){
-                    table_html = '<font color="red">¬dµL¬ÛÃö»s³æ¸ê®Æ</font>';
+                    table_html = '<font color="red">æŸ¥ç„¡ç›¸é—œè£½å–®è³‡æ–™</font>';
                 }else{
                     table_html += '</tbody>';
                 }
                 document.getElementById("mo_table").innerHTML = table_html;
             }
 
-            /*ÂIÀ»»s³æ¸ê®Æ«á¡A±N¸ê®Æ©ñ¨ìform*/
+            /*é»æ“Šè£½å–®è³‡æ–™å¾Œï¼Œå°‡è³‡æ–™æ”¾åˆ°form*/
             function row_click(tr){
                 document.getElementById("mo_btn_ok").disabled = "";
                 $('tr.tr_row').removeClass("tr_click");
@@ -293,8 +293,8 @@
                 document.getElementById("m_unit_doc").value = tr.children[2].textContent;
             }
         </script>
-        <script>//»sªí¤H­û
-            /*¶}±Ò»sªí¤H­û·j´Mmodal*/
+        <script>//è£½è¡¨äººå“¡
+            /*é–‹å•Ÿè£½è¡¨äººå“¡æœå°‹modal*/
             function modal_open_user(){
                 document.getElementById("myModal_user").style.display = "block";
                 document.getElementById("user_table").innerHTML = '';
@@ -303,7 +303,7 @@
                 document.getElementById("m_team_doc").value="";
                 document.getElementById('user_btn_ok').disabled = '';
             }
-            /*Ãö³¬modal*/
+            /*é—œé–‰modal*/
             function close_modal_user(val) {
                 document.getElementById("myModal_user").style.display = "none";
                 if (val=="N"){
@@ -327,7 +327,7 @@
                     search_user();
                 }
             });
-            /*Åã¥Ü»sªí¤H­û¸ê®Æ*/
+            /*é¡¯ç¤ºè£½è¡¨äººå“¡è³‡æ–™*/
             function search_user(){
                 document.getElementById("m_user").value = "";
                 document.getElementById("m_team_doc").value = "";
@@ -336,20 +336,20 @@
                 for(var i=0;i<user_list.length;i++){
                     if(user_list[i].user.includes(s_txt)==true||s_txt==""){
                         if(table_html==""){
-                            table_html = '<thead><tr><th>¤H­û¥N¸¹</th><th>¤H­û¦WºÙ</th></tr></thead></tbody>';
+                            table_html = '<thead><tr><th>äººå“¡ä»£è™Ÿ</th><th>äººå“¡åç¨±</th></tr></thead></tbody>';
                         }
                         table_html += '<tr classs="tr_row" onclick="row_click_user(this)"><td>' + user_list[i].user
                                     + '</td><td>' + user_list[i].user_name + '</td></tr>';
                     }
                 }
                 if(table_html==""){
-                    table_html = '<font color="red">¬dµL¬ÛÃö¤H­û¸ê®Æ</font>'
+                    table_html = '<font color="red">æŸ¥ç„¡ç›¸é—œäººå“¡è³‡æ–™</font>'
                 }else{
                     table_html += '</tbody>'
                 }
                 document.getElementById("user_table").innerHTML = table_html;
             }
-            /*ÂIÀ»»sªí¤H­û«á¡A±N¸ê®Æ©ñ¨ìform*/
+            /*é»æ“Šè£½è¡¨äººå“¡å¾Œï¼Œå°‡è³‡æ–™æ”¾åˆ°form*/
             function row_click_user(tr){
                 document.getElementById("user_btn_ok").disabled = "";
                 $('tr.tr_row').removeClass("tr_click");

@@ -105,6 +105,9 @@
             .label3{
                 width: 56px;
             }
+            .checkbox-div{
+                white-space: nowrap;
+            }
             .textarea7-1{
                 width: 475px;
                 resize: vertical;
@@ -151,7 +154,7 @@
     <body>
         <form class="form" id="myform" method="post">
             <input type="hidden" name="btn" id="btn_sel">
-            <h3>滾壓</h3>
+            <h3>褙膠(熱熔膠)</h3>
             <div class="div1">
             <div class="form-row">
                 <label class="form-label">生產日期(年/月/日):</label>
@@ -200,58 +203,44 @@
                 <label class="form-label">機台</label>
                 <select name="select1-1" id="select1-1"></select>
             </div>
-            <div class="form-row">
-                <label class="form-label label1">滾壓Shim使用量<span>(SET)/異常原因</span></label>
-                <div class="form-group">
-                    <div class="form-input"><input type="text" name="input1-2"></div>
-                    <div class="form-input">
-                        <input type="checkbox" name="checkbox1-1" id="checkbox1-1" value="凸點">
-                        <label for="checkbox1-1" class="label3">凸點</label>
-                        <input type="checkbox" name="checkbox1-2" id="checkbox1-2" value="凹點">
-                        <label for="checkbox1-2">凹點</label>
-                        <br>
-                        <input type="checkbox" name="checkbox1-3" id="checkbox1-3" value="尺寸裁錯">
-                        <label for="checkbox1-3">尺寸裁錯</label>
-                        <input type="checkbox" name="checkbox1-4" id="checkbox1-4" value="折到">
-                        <label for="checkbox1-4">折到</label>
-                    </div>
-                </div>
-            </div>
             </div>
             <div class="div2">
             <div class="form-row-h4">
                 <h4>核對製單</h4>
             </div>
             <div class="form-row">
-                <label class="form-label">膜料種類</label>
+                <label class="form-label">底紙種類</label>
                 <div class="form-input">
-                    <div  style="border-bottom: 1px solid black;margin-bottom: 5px;">
-                    <label style="min-width: 70px;">廠牌</label>
                     <select name="select2-1" id="select2-1">
-                        <option value="九星">九星</option>
-                        <option value="岱稜">岱稜</option>
-                        <option value="農寶">農寶</option>
+                        <option value="格底">格底</option>
+                        <option value="銅版紙">銅版紙</option>
+                        <option value="黃彩牛">黃彩牛</option>
                     </select>
-                    </div>
-                    <div  style="border-bottom: 1px solid black;margin-bottom: 5px;">
-                    <label style="min-width: 70px;">膜料規格</label>
-                    <input type="text" name="input2-1">
-                    </div>
-                    <div>
-                    <label style="min-width: 70px;">厚度(um)</label>
-                    <input type="text" name="input2-2">
-                    </div>
                 </div>
             </div>
             <div class="form-row">
-                <label class="form-label label2">核對刀模圖<span>(圖形, 接版尺寸, 方向)</span></label>
+                <label class="form-label">面紙種類</label>
                 <div class="form-group">
                     <select name="select2-2" id="select2-2">
-                        <option value="正常">正常</option>
-                        <option value="異常">異常</option>
+                        <option value="銀全破">銀全破</option>
+                        <option value="銀貼合">銀貼合</option>
+                        <option value="銀VOID">銀VOID</option>
+                        <option value="銀蜂巢">銀蜂巢</option>
+                        <option value="金全破">金全破</option>
+                        <option value="金貼合">金貼合</option>
+                        <option value="OPP膜">OPP膜</option>
+                        <option value="其他">其他</option>
                     </select>
-                    <input type="text" class="select-input" readonly name="input2-3">
+                    <input type="text" class="select-input" readonly name="input2-1">
                 </div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">預計膠厚(&#181;m)</label>
+                <div class="form-input"><input type="text" name="input2-2"></div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">預計膠寬(mm)</label>
+                <div class="form-input"><input type="text" name="input2-3"></div>
             </div>
             </div>
             <div class="div3">
@@ -259,24 +248,43 @@
                 <h4>核對前製程</h4>
             </div>
             <div class="form-row">
-                <label class="form-label label2">滾壓版厚標準<span>大版規格38~60 &#181;m</span><span>小版規格40~65 &#181;m</span></label>
+                <label class="form-label">前製程異常備註</label>
                 <div class="form-group">
-                    <select name="select3-1" id="select3-1">
-                        <option value="正常">正常</option>
-                        <option value="異常">異常</option>
-                    </select>
-                    <input type="text" class="select-input" readonly name="input3-1">
+                    <div class="form-input">
+                        <input type="checkbox" name="checkbox3-1" id="checkbox3-1" value="無異常">
+                        <label for="checkbox3-1">無異常</label>
+                        <br>
+                        <input type="checkbox" name="checkbox3-2" id="checkbox3-2" value="滾壓偏移">
+                        <label for="checkbox3-2">滾壓偏移</label>
+                        <input type="checkbox" name="checkbox3-3" id="checkbox3-3" value="暗區">
+                        <label for="checkbox3-3">暗區</label>
+                        <input type="checkbox" name="checkbox3-4" id="checkbox3-4" value="髒點">
+                        <label for="checkbox3-4">髒點</label>
+                        <br>
+                        <div class="checkbox-div">
+                        <input type="checkbox" name="checkbox3-5" id="checkbox3-5" value="邊側脫膜">
+                        <label for="checkbox3-5">邊側脫膜</label>
+                        <input type="checkbox" name="checkbox3-6" id="checkbox3-6" value="其他">
+                        <label for="checkbox3-6">其他</label>
+                        <input type="text" class="checkbox-input" readonly name="input3-1">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="form-row">
-                <label class="form-label label2">凹凸點檢查，拆版，燒焦<span>(不可有)</span>正版方向</label>
+                <label class="form-label">出紙方向</label>
                 <div class="form-group">
-                    <select name="select3-2" id="select3-2">
-                        <option value="正常">正常</option>
-                        <option value="異常">異常</option>
-                    </select>
-                    <input type="text" class="select-input" readonly name="input3-2">
+                    <div class="form-input">
+                        <input type="radio" name="radio3-1" id="radio3-1-1" value="同彩色稿">
+                        <label for="radio3-1-1">同彩色稿</label>
+                        <input type="radio" name="radio3-1" id="radio3-1-2" value="不同">
+                        <label for="radio3-1-2">不同</label>
+                    </div>
                 </div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">數量(M)</label>
+                <div class="form-input"><input type="text" name="input3-2"></div>
             </div>
             </div>
             <div class="div4">
@@ -284,53 +292,37 @@
                 <h4>機器檢查</h4>
             </div>
             <div class="form-row">
-                <label class="form-label">滾壓機台</label>
+                <label class="form-label">滾筒清潔(全部擦拭)</label>
                 <div class="form-group">
-                    <select name="select4-1" id="select4-1">
-                        <option value="E01">E01</option>
-                        <option value="E04">E04</option>
-                    </select>
+                    <div class="form-input">
+                        <input type="radio" name="radio4-1" id="radio4-1-1" value="是">
+                        <label for="radio4-1-1">是</label>
+                        <input type="radio" name="radio4-1" id="radio4-1-2" value="否">
+                        <label for="radio4-1-2">否</label>
+                    </div>
                 </div>
             </div>
             <div class="form-row">
-                <label class="form-label">溫度控制檢查</label>
-                <div class="form-group">
-                    <select name="select4-2" id="select4-2">
-                        <option value="正常">正常</option>
-                        <option value="異常">異常</option>
-                    </select>
-                    <input type="text" class="select-input" readonly name="input4-1">
-                </div>
+                <label class="form-label">膠溫度(&deg;C)(膠桶/膠管/膠厚)</label>
+                <div class="form-input"><input type="text" name="input4-1"></div>
             </div>
             <div class="form-row">
-                <label class="form-label">前張力/後張力kg</label>
+                <label class="form-label">出膠量MIX/MIN(%)</label>
                 <div class="form-group">
                     <div class="form-input"><input type="text" name="input4-2"></div>
                     <div class="form-input"><input type="text" name="input4-3"></div>
                 </div>
             </div>
             <div class="form-row">
-                <label class="form-label">主動輪周長</label>
+                <label class="form-label">前張力%/後張力(%)</label>
                 <div class="form-group">
-                    <select name="select4-3" id="select4-3">
-                        <option value="1">1E04 *303.48mm</option>
-                        <option value="2">1E04 *152mm(180度)</option>
-                        <option value="3">1E04 *383.4mm</option>
-                        <option value="4">1E01 *152mm(360度)</option>
-                        <option value="5">1E01 *158mm(360度)</option>
-                        <option value="6">1E01 *150mm(180度)</option>
-                    </select>
+                    <div class="form-input"><input type="text" name="input4-4"></div>
+                    <div class="form-input"><input type="text" name="input4-5"></div>
                 </div>
             </div>
             <div class="form-row">
-                <label class="form-label label2">架版檢查<span>對位尾線相接&le;0.3mm</span></label>
-                <div class="form-group">
-                    <select name="select4-4" id="select4-4">
-                        <option value="正常">正常</option>
-                        <option value="異常">異常</option>
-                    </select>
-                    <input type="text" class="select-input" readonly name="input4-4">
-                </div>
+                <label class="form-label">銅片寬度(mm)</label>
+                <div class="form-input"><input type="text" name="input4-6"></div>
             </div>
             </div>
             <div class="div5">
@@ -338,41 +330,28 @@
                 <h4>首末件檢查</h4>
             </div>
             <div class="form-row">
-                <label class="form-label label2">無髒點、無壓印不明<span>(圖面0髒點)&nbsp;(不可有)</span></label>
-                <div class="form-group">
-                    <select name="select5-1" id="select5-1">
-                        <option value="正常">正常</option>
-                        <option value="異常">異常</option>
-                    </select>
-                    <input type="text" class="select-input" readonly name="input5-1">
-                </div>
+                <label class="form-label label2">首末件各取樣<span>(400±50mm)</span></label>
+                <div class="form-input"><input type="text" name="input5-1"></div>
             </div>
             <div class="form-row">
-                <label class="form-label">核對透明片or網片</label>
-                <div class="form-group">
-                    <select name="select5-2" id="select5-2">
-                        <option value="有">有</option>
-                        <option value="沒有">沒有</option>
-                    </select>
-                    <input type="text" class="select-input" readonly name="input5-2">
-                </div>
+                <label class="form-label">圖面周長/圖面寬度(mm)</label>
+                <div class="form-input"><input type="text" name="input5-2"></div>
             </div>
             <div class="form-row">
-                <label class="form-label">樣品比對</label>
-                <div class="form-group">
-                    <select name="select5-3" id="select5-3">
-                        <option value="有">有</option>
-                        <option value="沒有">沒有</option>
-                    </select>
-                    <input type="text" class="select-input" readonly name="input5-3">
-                </div>
+                <label class="form-label">底紙厚度(mm)</label>
+                <div class="form-input"><input type="text" name="input5-3"></div>
             </div>
             <div class="form-row">
-                <label class="form-label">周長(mm)<br>標準+0.3-0.2/取樣420 ±50</label>
-                <div class="form-group">
-                    <div class="form-input"><input type="text" name="input5-4"></div>
-                    <div class="form-input"><input type="text" name="input5-5"></div>
-                </div>
+                <label class="form-label">面紙厚度(mm)</label>
+                <div class="form-input"><input type="text" name="input5-4"></div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">總厚度(mm)</label>
+                <div class="form-input"><input type="text" name="input5-5"></div>
+            </div>
+            <div class="form-row">
+                <label class="form-label">實際膠厚(mm)</label>
+                <div class="form-input"><input type="text" name="input5-6"></div>
             </div>
             </div>
             <div class="div6">
@@ -380,26 +359,23 @@
                 <h4>製程中檢查</h4>
             </div>
             <div class="form-row">
-                <label class="form-label label2">空白區數據/電眼數據<span>銀色7000▲3000▼</span><span>透明3400▲2000▼</span></label>
+                <label class="form-label">線性缺膠(不可發生)</span></label>
                 <div class="form-group">
-                    <div class="form-input"><input type="text" name="input6-1"></div>
-                    <div class="form-input"><input type="text" name="input6-2"></div>
+                    <div class="form-input">
+                        <input type="radio" name="radio6-1" id="radio6-1-1" value="有">
+                        <label for="radio6-1-1">有</label>
+                        <input type="radio" name="radio6-1" id="radio6-1-2" value="無">
+                        <label for="radio6-1-2">無</label>
+                    </div>
                 </div>
             </div>
             <div class="form-row">
-                <label class="form-label">生產速度_M/分</label>
-                <div class="form-input"><input type="text" name="input6-3"></div>
+                <label class="form-label label2">環境(溫度/濕度)<span>(&deg;C/%)</span></label>
+                <div class="form-input"><input type="text" name="input6-1"></div>
             </div>
             <div class="form-row">
-                <label class="form-label label2">生產壓力kg/cm2<span>1號機24~34 4號機10~28</span></label>
-                <div class="form-input"><input type="text" name="input6-4"></div>
-            </div>
-            <div class="form-row">
-                <label class="form-label">生產溫度 (°C)<br>設定溫度/量測溫度<br>(-5&le;設定-實際)&le;10</label>
-                <div class="form-group">
-                    <div class="form-input"><input type="text" name="input6-5"></div>
-                    <div class="form-input"><input type="text" name="input6-6"></div>
-                </div>
+                <label class="form-label label2">褙膠速度(M/分)</label>
+                <div class="form-input"><input type="text" name="input6-2"></div>
             </div>
             </div>
             <div class="div7">
@@ -407,17 +383,20 @@
                 <label class="form-label">異常狀況</label>
                 <div class="form-group">
                     <div class="form-input">
-                        <input type="checkbox" name="checkbox7-1" id="checkbox7-1" value="滾壓偏移">
-                        <label for="checkbox7-1">滾壓偏移</label>
-                        <input type="checkbox" name="checkbox7-2" id="checkbox7-2" value="暗區">
-                        <label for="checkbox7-2">暗區</label>
-                        <input type="checkbox" name="checkbox7-3" id="checkbox7-3" value="無異常">
-                        <label for="checkbox7-3">無異常</label>
+                        <input type="checkbox" name="checkbox7-1" id="checkbox7-1" value="無異常">
+                        <label for="checkbox7-1">無異常</label>
                         <br>
-                        <input type="checkbox" name="checkbox7-4" id="checkbox7-4" value="髒點">
-                        <label for="checkbox7-4" class="label3">髒點</label>
-                        <input type="checkbox" name="checkbox7-5" id="checkbox7-5" value="皺褶">
-                        <label for="checkbox7-5">皺褶</label>
+                        <input type="checkbox" name="checkbox7-2" id="checkbox7-2" value="蛇行">
+                        <label for="checkbox7-2">蛇行</label>
+                        <input type="checkbox" name="checkbox7-3" id="checkbox7-3" value="膠不均">
+                        <label for="checkbox7-3">膠不均</label>
+                        <input type="checkbox" name="checkbox7-4" id="checkbox7-4" value="破紙">
+                        <label for="checkbox7-4">破紙</label>
+                        <br>
+                        <input type="checkbox" name="checkbox7-5" id="checkbox7-5" value="膨管">
+                        <label for="checkbox7-5">膨管</label>
+                        <input type="checkbox" name="checkbox7-6" id="checkbox7-6" value="出筍">
+                        <label for="checkbox7-6">出筍</label>
                     </div>
                 </div>
             </div>
@@ -437,14 +416,14 @@
         <script>
             /*預設日期為當天*/
             document.querySelector(".today").valueAsDate = new Date();
-            /*判斷select是否選擇異常或沒有*/
+            /*判斷select是否選擇其他*/
             document.querySelectorAll(".form-group").forEach(function(x) {
                 var chk = x.querySelectorAll("select");
                 var text = x.querySelector(".select-input");
                 function readonlychange(){
                     var y = x.querySelector("select option:checked");
                     if (y && text) {
-                        if (y.value === "異常" || y.value === "沒有") {
+                        if (y.value === "其他") {
                             text.readOnly = false;
                         } else {
                             text.readOnly = true;
@@ -457,6 +436,16 @@
                 });
                 readonlychange();
             });
+            /*判斷checkbox是否勾選其他*/
+            var chkbox = document.querySelector("input[id='checkbox3-6']");
+            chkbox.addEventListener("change", () => {
+                var input = chkbox.parentElement.querySelector("input[class='checkbox-input']");
+                input.readOnly = !chkbox.checked;
+                if(!chkbox.checked){
+                    input.value = "";
+                }
+            });
+
             /*判斷每個段落最下面一列沒有底線*/
             function border_bottom(){
                 document.querySelectorAll(".div1, .div2, .div3, .div4, .div5, .div6, .div7").forEach(y => {
@@ -495,7 +484,7 @@
 
                 var a = event.target;
                 if(a.value === ""){
-                    a.value = "0";
+                    a.value = 0;
                     return;
                 }
                 var x = Number(a.value);
@@ -617,7 +606,7 @@
                 event.preventDefault();
                 event.returnValue="";
             })
-            /*點擊送出*/
+            /*點擊送出(form資料還需要調整-C60707)*/
             function askForSubmit(btn) {
                 needConfirm=true;
                 window.parent.postMessage(

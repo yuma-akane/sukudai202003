@@ -1,26 +1,26 @@
 var user_list = [
- {user: "0001", user_name: "¶À¤¯«T"}
- ,{user: "0002", user_name: "²ø¿PµØ"}
- ,{user: "0005", user_name: "·¨¥È­µ"}
- ,{user: "0080", user_name: "¶À¶hªY"}
- ,{user: "0089", user_name: "³¢«ä¬Â"}
- ,{user: "0098", user_name: "´å²Q´f"}
- ,{user: "0106", user_name: "¶Àµ¤§»"}
- ,{user: "0136", user_name: "³¯¥Éª³"}
- ,{user: "0142", user_name: "·¨²Q¯ø"}
- ,{user: "0157", user_name: "¶À¶h¥Á"}
- ,{user: "0165", user_name: "¤B¤óÎd"}
- ,{user: "0172", user_name: "·¨ØdÛŞ"}
- ,{user: "0181", user_name: "ÁÂ´ºµØ"}
- ,{user: "0189", user_name: "¿ú¦w©g"}
- ,{user: "0191", user_name: "³¯¿[©y"}
- ,{user: "0196", user_name: "¿½ñZ°·"}
- ,{user: "0205", user_name: "¤ı•h¶²"}
- ,{user: "0214", user_name: "¿c§®½¬"}
+ {user: "0001", user_name: "é»ƒä»ä¿Š"}
+ ,{user: "0002", user_name: "èŠç‡•è¯"}
+ ,{user: "0005", user_name: "æ¥Šç„éŸ³"}
+ ,{user: "0080", user_name: "é»ƒé€¸æ¬£"}
+ ,{user: "0089", user_name: "éƒ­æ€ç²"}
+ ,{user: "0098", user_name: "æ¸¸æ·‘æƒ "}
+ ,{user: "0106", user_name: "é»ƒç«£å®"}
+ ,{user: "0136", user_name: "é™³ç‰çŸ"}
+ ,{user: "0142", user_name: "æ¥Šæ·‘èŒ¹"}
+ ,{user: "0157", user_name: "é»ƒé€¸æ°‘"}
+ ,{user: "0165", user_name: "ä¸æ°å§®"}
+ ,{user: "0172", user_name: "æ¥Šå¤è©…"}
+ ,{user: "0181", user_name: "è¬æ™¯è¯"}
+ ,{user: "0189", user_name: "éŒ¢å®‰å¦®"}
+ ,{user: "0191", user_name: "é™³ç’Ÿå®œ"}
+ ,{user: "0196", user_name: "è•­é§å¥"}
+ ,{user: "0205", user_name: "ç‹ç¶‰é›¯"}
+ ,{user: "0214", user_name: "ç›§å¦™è“®"}
 ];
 var team_list = [
- {user_id: "0181", user_team: "01", team_doc: "³]­p"}
- ,{user_id: "0181", user_team: "02", team_doc: "´ú¸Õ"}
- ,{user_id: "0205", user_team: "01", team_doc: "³]­p"}
- ,{user_id: "0208", user_team: "01", team_doc: "³]­p"}
+ {user_id: "0181", user_team: "01", team_doc: "è¨­è¨ˆ"}
+ ,{user_id: "0181", user_team: "02", team_doc: "æ¸¬è©¦"}
+ ,{user_id: "0205", user_team: "01", team_doc: "è¨­è¨ˆ"}
+ ,{user_id: "0208", user_team: "01", team_doc: "è¨­è¨ˆ"}
 ];
